@@ -10,6 +10,7 @@ Lista com a resolução dos 16 exercícios propóstos pelo professor Jaques do c
   - windows 10 ou 11
   - Visual Studio Code ou software equivalente
   - Node.JS
+  - git
 ```
     
 ## Rodando localmente
@@ -17,9 +18,20 @@ Lista com a resolução dos 16 exercícios propóstos pelo professor Jaques do c
 Clone o projeto
 
 ```bash
-  git clone https://github.com/Leonardo-Huck/maisPraTi.git
+  git clone -n https://github.com/Leonardo-Huck/maisPraTi.git
 ```
 
+Entre no diretório do projeto
+
+```bash
+  cd maisPraTi
+```
+
+Execute o comando
+
+```bash
+  git checkout HEAD ListasdeExercicios
+```
 Entre no diretório do projeto
 
 ```bash
