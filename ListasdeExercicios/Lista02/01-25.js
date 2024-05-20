@@ -749,7 +749,7 @@ console.log('////////////////////////////////////')
 console.log('A soma das colunas separadamente é: ')
 let cont = 1;
 for (posicao of somaColunas) {
-    console.log(`${cont++}ª posicao: ${posicao}`);
+    console.log(`${cont++}ª Coluna: ${posicao}`);
 }
 
 function gerarNumeroAleatorio(min, max) {
