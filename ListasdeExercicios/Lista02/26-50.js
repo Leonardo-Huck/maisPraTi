@@ -174,6 +174,114 @@ console.log(SL);
 console.log('O vetor SC com a soma das colunas é: ')
 console.log(SC);
 
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+31. Escreva um algoritmo que leia um número inteiro A e uma matriz V 30 x 30 de inteiros.
+Conte quantos valores iguais a A estão na matriz. Crie, a seguir, uma matriz X contendo
+todos os elementos de V diferentes de A. Mostre os resultados.
+*/
+
+console.log('\n------------ ELEMENTOS DIFERENTES DE A NA MATRIZ V 30 X 30  ------------\n');
+
+let A2 = parseInt(prompt('Informe um numero inteiro para verificação: '));
+const V2 = [];
+const X = [];
+
+console.log('Informe as pocições da matriz V(30, 30): ');
+ReadMatrix(V2, 30, 30);
+
+let contA = 0;
+for (let i = 0; i < V2.length; i++) {
+    let lineX = [];
+    for (let j = 0; j < V2[i].length; j++) {
+        if (V2[i][j] === A2) contA++;
+        else lineX.push(V2[i][j]);
+    }
+    X.push(lineX);
+}
+
+console.log('\nMatriz informada');
+console.log(ShowMatrix(V2));
+console.log(`Numero inteiro A utilizado para busca: ${A2}`);
+console.log(`Quantidade de valores iguais a A: ${contA}`);
+console.log('\nMatriz Contendo os elementos diferentes de A');
+console.log(ShowMatrix(X));
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+32. Escrever um algoritmo que lê uma matriz M(12,13) e divida todos os 13 elementos de
+ cada uma das 12 linhas de M pelo maior elemento em módulo daquela linha. Escrever a
+ matriz lida e a modificada.
+*/
+
+console.log('\n------------ DIVISÃO DE ELEMENTOS NA MATRIZ  ------------\n');
+
+const M12X13 = [];
+const M12X13MODIFIED = [];
+
+ReadMatrix(M12X13, 12, 13);
+
+for (let i = 0; i < M12X13.length; i++) {
+    let largestElement = Math.max(...M12X13[i]);
+    let lineM12X13MODIFIED = [];
+    for (let j = 0; j < M12X13[i].length; j++) {
+        lineM12X13MODIFIED.push((M12X13[i][j] / largestElement).toFixed(2));
+    }
+    M12X13MODIFIED.push(lineM12X13MODIFIED);
+}
+
+console.log('\nMatriz Informada');
+console.log(ShowMatrix(M12X13));
+console.log('\nMatriz Modificada');
+console.log(ShowMatrix(M12X13MODIFIED));
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+ 33. Faça um algoritmo que leia uma matriz 3 x 3 e após a leitura, multiplique os
+ elementos da diagonal principal com a média dos elementos da diagonal secundária.
+*/
+console.log('\n------------ MULTIPLICANDO DIAGONAIS  ------------\n');
+
+const M3X3 = [];
+
+ReadMatrix(M3X3, 3, 3);
+
+let diagonal = [];
+for (let i = 0; i < M3X3.length; i++) {
+    diagonal.push(M3X3[i][M3X3.length - 1 - i]);
+}
+
+let totalSumDiagonalSecondary = 0;
+let totalTermsDiagonalSecondary = 0;
+for (element of diagonal) {
+    totalSumDiagonalSecondary += element;
+    totalTermsDiagonalSecondary++;
+}
+
+let averageDiagonalSecondary = (totalSumDiagonalSecondary / totalTermsDiagonalSecondary).toFixed(2);
+let elementsDiagonalPrincipal = [];
+let elementsDiagonalPrincipalModified = [];
+for (let i = 0; i < M3X3.length; i++) {
+    for (let j = 0; j < M3X3[i].length; j++) {
+        if (i === j) {
+            elementsDiagonalPrincipal.push(M3X3[i][j]);
+            elementsDiagonalPrincipalModified.push(M3X3[i][j] * averageDiagonalSecondary);
+        }
+    }
+}
+console.log('\nMatriz informada');
+console.log(ShowMatrix(M3X3));
+console.log('A Diagonal secundária é formada por: ')
+console.log(diagonal);
+console.log(`A média desses elementos é de: ${averageDiagonalSecondary}`);
+console.log('\nA Diagonal principal é formada por: ')
+console.log(elementsDiagonalPrincipal);
+console.log('\nA Diagonal principal multiplicada pela média da diagonal secundaria é:');
+console.log(elementsDiagonalPrincipalModified);
 
 //////////////////////////////////////// COMMON FUNCTIONS //////////////////////////////////////// 
 function GenerateRandomNumber(min, max) {
@@ -200,4 +308,14 @@ function ShowMatrix(matrix) {
         formattedMatrix += '\n';
     }
     return formattedMatrix;
+}
+
+function ReadMatrix(matrix, line, column) {
+    for (let i = 0; i < line; i++) {
+        let Line = [];
+        for (let j = 0; j < column; j++) {
+            Line.push(parseInt(prompt(`Posição [${i}][${j}] : `)));
+        }
+        matrix.push(Line);
+    }
 }
