@@ -522,6 +522,7 @@ todos os elementos de V diferentes de A. Mostre os resultados.
 /* 39. Faça um algoritmo que leia um vetor (A) de 100 posições. Em seguida, compacte o
  vetor, retirando os valores nulos e negativos. Coloque o resultado no vetor B.
  */
+// console.log('\n------------ VETOR A 100 ------------\n');
 
 // const vetorA100 = [];
 // let vetorB = [];
@@ -550,6 +551,228 @@ todos os elementos de V diferentes de A. Mostre os resultados.
  e quadras, apenas por quinas.)
  */
 
+// console.log('\n------------ LOTO ------------\n');
+
+// console.log('Informe os números sorteados: ');
+// const vetorLoto = lerVetor();
+// const jogos = [];
+
+// console.log('\nInforme os Jogos: ');
+// for (let i = 0; i < 50; i++) {
+//     console.log(`${i + 1}º Jogo: `);
+//     let aposta = lerVetor();
+//     jogos.push(aposta);
+// }
+
+// for (let i = 0; i < jogos.length; i++) {
+//     let acertos = 0;
+//     for (let j = 0; j < jogos[i].length; j++)
+//         if (jogos[i][j] === vetorLoto[j]) acertos++;
+//     if (acertos === jogos[i].length) {
+//         console.log(`\nA aposta nº ${i + 1}: [ ` + jogos[i] + ' ]');
+//         console.log('Foi um Ganhador!');
+//     }
+// }
+
+// function lerVetor() {
+//     const vetor = [];
+//     for (let i = 0; i < 5; i++) {
+//         let numero = 0;
+//         while (true) {
+//             numero = parseInt(prompt(`Digite o ${i + 1}º número (01 ao 25): `));
+//             if (numero < 1 || numero > 25) console.log('Número fora do intervalo permitido!');
+//             else break;
+//         }
+//         vetor.push(numero);
+//     }
+//     return vetor.sort();
+// }
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/* 
+41. Dado o objeto pessoa com propriedades nome e idade, acesse e imprima o valor de
+ idade. Adicione uma nova propriedade chamada email ao objeto pessoa que já possui
+ nome e idade.
+*/
+// console.log('\n------------ PESSOA ------------\n');
+
+// let Pessoa = {
+//     Nome: 'Leonardo',
+//     Idade: 33
+// }
+
+// console.log(`${Pessoa.Nome} tem ${Pessoa.Idade} anos.`);
+
+// Pessoa.Email = 'leonardomonteirolima@gmail.com';
+
+// console.log(Pessoa);
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+42. Crie um objeto chamado dados que contém várias propriedades, incluindo números,
+ strings e arrays. Escreva uma função que retorne um novo objeto apenas com as
+ propriedades que são arrays.
+*/
+
+// console.log('\n------------ OBJETO DADOS ------------\n');
+
+// let Dados = {
+//     nome: "Alice",
+//     idade: 2,
+//     cidade: "Friburgo",
+//     'Cores Favoritas': ["vermelho", "azul", "verde"],
+//     'Animais de Estimação': ["gato", "cachorro", "coelho"],
+// };
+
+// let apenasArrays = verificarArrays(Dados);
+
+// console.log('Dados iniciais:');
+// console.log(Dados);
+// console.log('\nApenas os arrays: ');
+// console.log(apenasArrays);
+
+// function verificarArrays(objeto) {
+//     let resultado = {};
+//     for (let propriedade in objeto) {
+//         if (Array.isArray(objeto[propriedade])) {
+//             resultado[propriedade] = objeto[propriedade];
+//         }
+//     }
+//     return resultado;
+// }
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/* 
+43. Dado dois objetos, obj1 e obj2, escreva uma função que crie um novo objeto
+ combinando as propriedades de ambos, onde as propriedades de obj2 têm precedência
+ sobre as do obj1 em caso de conflitos.
+*/
+
+// console.log('\n------------ COMBINANDO OBJETOS ------------\n');
+
+
+// const obj1 = {
+//     Nome: 'Samuel',
+//     Idade: 8,
+//     Cidade: 'Rio de Janeiro',
+//     CPF: '111.000.333-08'
+// };
+
+// const obj2 = {
+//     Nome: 'Leonardo',
+//     Idade: 33,
+//     Cidade: "Teresópolis",
+//     UF: 'RJ'
+// };
+
+// let objetoCombinado = combinarObjetos(obj1, obj2);
+// console.log(objetoCombinado);
+
+// function combinarObjetos(obj1, obj2) {
+//     let novoObjeto = {};
+
+//     Object.assign(novoObjeto, obj1);
+//     Object.assign(novoObjeto, obj2);
+
+//     return novoObjeto;
+// }
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+44. Escreva uma função que conte quantas propriedades do tipo string existem em um
+ objeto e retorne esse número.
+*/
+// console.log('\n------------ CONTANDO PROPRIEDADES DE UM OBJETO ------------\n');
+
+// let Carro = {
+//     Modelo: "Mustang Mach1",
+//     Ano: 2023,
+//     Combustível: "Gasolina",
+//     Portas: 2,
+//     Motor: "V8",
+//     Marca: "Ford"
+// };
+
+// let numeroDeStrings = ContarPropriedades(Carro);
+// console.log(Carro);
+// console.log(`Número de propriedades do tipo string: ${numeroDeStrings}`);
+
+// function ContarPropriedades(objeto) {
+//     let contador = 0;
+//     let propriedades = Object.keys(objeto);
+
+//     for (propriedade of propriedades)
+//         if (typeof objeto[propriedade] === "string") contador++;
+
+//     return contador;
+// }
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/* 
+45. Dado um array de strings, crie um objeto onde cada string é uma chave, e seu valor é
+o número de vezes que a string aparece no array.
+*/
+// console.log('\n------------ OBJETO COM ARRAY DE STRINGS ------------\n');
+
+// const Frutas = ["maçã", "banana", "laranja", "uva", "pera", "maçã", "abacaxi", "banana", "morango", "uva", "pêssego", "laranja", "laranja",
+//     "kiwi", "pera", "morango", "abacate", "kiwi", "pera", "pera"];
+
+// let ObjetoFrutas = {};
+
+// for (fruta of Frutas) {
+//     if (ObjetoFrutas[fruta]) {
+//         ObjetoFrutas[fruta]++;
+//     } else {
+//         ObjetoFrutas[fruta] = 1;
+//     }
+// }
+
+// console.log(ObjetoFrutas);
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/* 
+46. Suponha que você tem um array de objetos onde cada objeto representa uma venda
+com vendedor e valor. Escreva uma função que retorne um objeto que sumarize o total
+de vendas por vendedor.
+*/
+
+// console.log('\n------------ OBJETO VENDAS ------------\n');
+
+// const Vendas = [{ Vendedor: 'Leonardo', Valor: 1500 }, { Vendedor: 'Fabiana', Valor: 2000 }, { Vendedor: 'Miguel', Valor: 1600 },
+// { Vendedor: 'Leonardo', Valor: 3500 }, { Vendedor: 'Fabiana', Valor: 1100 }, { Vendedor: 'Miguel', Valor: 4000 },
+// { Vendedor: 'Leonardo', Valor: 1800 }, { Vendedor: 'Fabiana', Valor: 3000 }, { Vendedor: 'Miguel', Valor: 1100 },
+// { Vendedor: 'Leonardo', Valor: 1100 }, { Vendedor: 'Fabiana', Valor: 1900 }, { Vendedor: 'Miguel', Valor: 1700 }
+// ];
+
+// let vendasPorVendedor = sumarizarVendas(Vendas);
+// console.log(vendasPorVendedor);
+
+// function sumarizarVendas(vendas) {
+//     let totalVendas = {};
+//     for (venda of vendas) {
+//         let { Vendedor, Valor } = venda;
+//         if (totalVendas[Vendedor]) {
+//             totalVendas[Vendedor] += Valor;
+//         } else {
+//             totalVendas[Vendedor] = Valor;
+//         }
+//     }
+//     return totalVendas;
+// }
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/* 
+47. Crie uma função que transforme um objeto de entrada aplicando uma função
+fornecida a cada uma das propriedades do objeto, retornando um novo objeto com os
+resultados.
+*/
 
 
 //////////////////////////////////////// COMMON FUNCTIONS //////////////////////////////////////// 
