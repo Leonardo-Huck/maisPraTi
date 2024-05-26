@@ -4,29 +4,29 @@
 //Constante do prompt
 const prompt = require('prompt-sync')();
 
-// console.log('\n------------ MATRIZ PRODUTO ------------\n');
+console.log('\n------------ MATRIZ PRODUTO ------------\n');
 
-// const A = [];
-// const B = [];
+const A = [];
+const B = [];
 
-// FillArray(A, 3, 5);
-// FillArray(B, 3, 5);
+FillArray(A, 3, 5);
+FillArray(B, 3, 5);
 
-// const P = [];
+const P = [];
 
-// for (let i = 0; i < A.length; i++) {
-//     let lineP = [];
-//     for (let j = 0; j < A[i].length; j++) {
-//         let product = A[i][j] * B[i][j]
-//         lineP.push(product);
-//     }
-//     P.push(lineP);
-// }
+for (let i = 0; i < A.length; i++) {
+    let lineP = [];
+    for (let j = 0; j < A[i].length; j++) {
+        let product = A[i][j] * B[i][j]
+        lineP.push(product);
+    }
+    P.push(lineP);
+}
 
-// console.log(A);
-// console.log(B);
-// console.log('\nMATRIZ PRODUTO DE A E B:')
-// console.log(P);
+console.log(A);
+console.log(B);
+console.log('\nMATRIZ PRODUTO DE A E B:')
+console.log(P);
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -37,31 +37,31 @@ multiplicar a matriz M pelo valor A e colocar os valores da matriz multiplicados
 umvetor V(36). Escrever o vetor V no final.
 */
 
-// console.log('\n------------ VETOR V36 ------------\n');
+console.log('\n------------ VETOR V36 ------------\n');
 
-// const M = [];
+const M = [];
 
-// console.log('Informe as pocições da matriz M(6,6): ');
-// for (let i = 0; i < 6; i++) {
-//     let lineP = [];
-//     for (let j = 0; j < 6; j++) {
-//         lineP.push(parseInt(prompt(`Posição [${i}][${j}] : `)));
-//     }
-//     M.push(lineP);
-// }
+console.log('Informe as pocições da matriz M(6,6): ');
+for (let i = 0; i < 6; i++) {
+    let lineP = [];
+    for (let j = 0; j < 6; j++) {
+        lineP.push(parseInt(prompt(`Posição [${i}][${j}] : `)));
+    }
+    M.push(lineP);
+}
 
-// let valueA = parseInt(prompt('\nInforme um valor A para multiplicação: '));
+let valueA = parseInt(prompt('\nInforme um valor A para multiplicação: '));
 
-// let V = [];
+let V = [];
 
-// for (let i = 0; i < M.length; i++) {
-//     for (let j = 0; j < M[i].length; j++) {
-//         V.push(M[i][j] * valueA);
-//     }
-// }
+for (let i = 0; i < M.length; i++) {
+    for (let j = 0; j < M[i].length; j++) {
+        V.push(M[i][j] * valueA);
+    }
+}
 
-// console.log('\nO vetor produto da operação é: ')
-// console.log(V);
+console.log('\nO vetor produto da operação é: ')
+console.log(V);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -71,25 +71,25 @@ umvetor V(36). Escrever o vetor V no final.
  b) a soma dos elementos abaixo da diagonal principal;
 */
 
-// console.log('\n------------ CALCULANDO ELEMENTOS ACIMA E ABAIXO DA DIAGONAL PRINCIPAL ------------\n');
+console.log('\n------------ CALCULANDO ELEMENTOS ACIMA E ABAIXO DA DIAGONAL PRINCIPAL ------------\n');
 
-// const M10X10 = [];
-// FillArray(M10X10, 10, 10);
+const M10X10 = [];
+FillArray(M10X10, 10, 10);
 
-// let sumUpPrincipalDiagonal = 0;
-// let sumBelowPrincipalDiagonal = 0;
+let sumUpPrincipalDiagonal = 0;
+let sumBelowPrincipalDiagonal = 0;
 
-// console.log(ShowMatrix(M10X10));
+console.log(ShowMatrix(M10X10));
 
-// for (let i = 0; i < M10X10.length; i++) {
-//     for (let j = 0; j < M10X10[i].length; j++) {
-//         if (j > i) sumUpPrincipalDiagonal += M10X10[i][j];
-//         else if (j < i) sumBelowPrincipalDiagonal += M10X10[i][j];
-//     }
-// }
+for (let i = 0; i < M10X10.length; i++) {
+    for (let j = 0; j < M10X10[i].length; j++) {
+        if (j > i) sumUpPrincipalDiagonal += M10X10[i][j];
+        else if (j < i) sumBelowPrincipalDiagonal += M10X10[i][j];
+    }
+}
 
-// console.log(`A soma dos elementos acima da diagonal principal é: ${sumUpPrincipalDiagonal}`);
-// console.log(`A soma dos elementos abaixo da diagonal principal é: ${sumBelowPrincipalDiagonal}`);
+console.log(`A soma dos elementos acima da diagonal principal é: ${sumUpPrincipalDiagonal}`);
+console.log(`A soma dos elementos abaixo da diagonal principal é: ${sumBelowPrincipalDiagonal}`);
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -103,40 +103,40 @@ umvetor V(36). Escrever o vetor V no final.
  Escrever essas somas e a matriz.
  */
 
-// console.log('\n------------ CALCULOS DE UMA MATRIZ 5 X 5  ------------\n');
+console.log('\n------------ CALCULOS DE UMA MATRIZ 5 X 5  ------------\n');
 
-// const M5X5 = [];
+const M5X5 = [];
 
-// console.log('Informe as pocições da matriz M(5,5): ');
-// for (let i = 0; i < 5; i++) {
-//     let lineM5X5 = [];
-//     for (let j = 0; j < 5; j++) {
-//         lineM5X5.push(parseInt(prompt(`Posição [${i}][${j}] : `)));
-//     }
-//     M5X5.push(lineM5X5);
-// }
+console.log('Informe as pocições da matriz M(5,5): ');
+for (let i = 0; i < 5; i++) {
+    let lineM5X5 = [];
+    for (let j = 0; j < 5; j++) {
+        lineM5X5.push(parseInt(prompt(`Posição [${i}][${j}] : `)));
+    }
+    M5X5.push(lineM5X5);
+}
 
-// let sumLineFour = 0;
-// let sumColumnTwo = 0;
-// let sumPrincipalDiagonal = 0;
-// let sumAllElements = 0;
+let sumLineFour = 0;
+let sumColumnTwo = 0;
+let sumPrincipalDiagonal = 0;
+let sumAllElements = 0;
 
-// for (let i = 0; i < M5X5.length; i++) {
-//     for (let j = 0; j < M5X5[i].length; j++) {
-//         if (j === i) sumPrincipalDiagonal += M5X5[i][j];
-//         if (i === 3) sumLineFour += M5X5[i][j];
-//         if (j === 1) sumColumnTwo += M5X5[i][j];
-//         sumAllElements += M5X5[i][j];
-//     }
-// }
+for (let i = 0; i < M5X5.length; i++) {
+    for (let j = 0; j < M5X5[i].length; j++) {
+        if (j === i) sumPrincipalDiagonal += M5X5[i][j];
+        if (i === 3) sumLineFour += M5X5[i][j];
+        if (j === 1) sumColumnTwo += M5X5[i][j];
+        sumAllElements += M5X5[i][j];
+    }
+}
 
-// console.log('\nMatriz informada:');
-// console.log(ShowMatrix(M5X5));
+console.log('\nMatriz informada:');
+console.log(ShowMatrix(M5X5));
 
-// console.log(`A soma da Linha 4 é : ${sumLineFour}`);
-// console.log(`A soma da Coluna 2 é : ${sumColumnTwo}`);
-// console.log(`A soma da Diagonal Principal é : ${sumPrincipalDiagonal}`);
-// console.log(`A soma de todos os elementos é : ${sumAllElements}`);
+console.log(`A soma da Linha 4 é : ${sumLineFour}`);
+console.log(`A soma da Coluna 2 é : ${sumColumnTwo}`);
+console.log(`A soma da Diagonal Principal é : ${sumPrincipalDiagonal}`);
+console.log(`A soma de todos os elementos é : ${sumAllElements}`);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -146,33 +146,33 @@ umvetor V(36). Escrever o vetor V no final.
  e osvetores criados.
 */
 
-// console.log('\n------------ CALCULOS DE UMA MATRIZ 5 X 5 E VETORES SL E SC  ------------\n');
+console.log('\n------------ CALCULOS DE UMA MATRIZ 5 X 5 E VETORES SL E SC  ------------\n');
 
-// const M5X5TWO = [];
-// let SL = [];
-// let SC = new Array(5).fill(0);
+const M5X5TWO = [];
+let SL = [];
+let SC = new Array(5).fill(0);
 
-// console.log('Informe as pocições da matriz M(5,5): ');
-// for (let i = 0; i < 5; i++) {
-//     let lineM5X5TWO = [];
-//     let sumLineM5x5TWO = 0;
-//     for (let j = 0; j < 5; j++) {
-//         let entryM5X5TWO = parseInt(prompt(`Posição [${i}][${j}] : `));
-//         sumLineM5x5TWO += entryM5X5TWO;
-//         SC[j] += entryM5X5TWO;
-//         lineM5X5TWO.push(entryM5X5TWO);
-//     }
-//     SL.push(sumLineM5x5TWO);
-//     M5X5TWO.push(lineM5X5TWO);
-// }
+console.log('Informe as pocições da matriz M(5,5): ');
+for (let i = 0; i < 5; i++) {
+    let lineM5X5TWO = [];
+    let sumLineM5x5TWO = 0;
+    for (let j = 0; j < 5; j++) {
+        let entryM5X5TWO = parseInt(prompt(`Posição [${i}][${j}] : `));
+        sumLineM5x5TWO += entryM5X5TWO;
+        SC[j] += entryM5X5TWO;
+        lineM5X5TWO.push(entryM5X5TWO);
+    }
+    SL.push(sumLineM5x5TWO);
+    M5X5TWO.push(lineM5X5TWO);
+}
 
-// console.log('\nA matriz informada é:');
-// console.log(ShowMatrix(M5X5TWO));
+console.log('\nA matriz informada é:');
+console.log(ShowMatrix(M5X5TWO));
 
-// console.log('O vetor SL com a soma das linhas é: ')
-// console.log(SL);
-// console.log('O vetor SC com a soma das colunas é: ')
-// console.log(SC);
+console.log('O vetor SL com a soma das linhas é: ')
+console.log(SL);
+console.log('O vetor SC com a soma das colunas é: ')
+console.log(SC);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -182,31 +182,31 @@ Conte quantos valores iguais a A estão na matriz. Crie, a seguir, uma matriz X 
 todos os elementos de V diferentes de A. Mostre os resultados.
 */
 
-// console.log('\n------------ ELEMENTOS DIFERENTES DE A NA MATRIZ V 30 X 30  ------------\n');
+console.log('\n------------ ELEMENTOS DIFERENTES DE A NA MATRIZ V 30 X 30  ------------\n');
 
-// let A2 = parseInt(prompt('Informe um numero inteiro para verificação: '));
-// const V2 = [];
-// const X = [];
+let A2 = parseInt(prompt('Informe um numero inteiro para verificação: '));
+const V2 = [];
+const X = [];
 
-// console.log('Informe as pocições da matriz V(30, 30): ');
-// ReadMatrix(V2, 30, 30);
+console.log('Informe as pocições da matriz V(30, 30): ');
+ReadMatrix(V2, 30, 30);
 
-// let contA = 0;
-// for (let i = 0; i < V2.length; i++) {
-//     let lineX = [];
-//     for (let j = 0; j < V2[i].length; j++) {
-//         if (V2[i][j] === A2) contA++;
-//         else lineX.push(V2[i][j]);
-//     }
-//     X.push(lineX);
-// }
+let contA = 0;
+for (let i = 0; i < V2.length; i++) {
+    let lineX = [];
+    for (let j = 0; j < V2[i].length; j++) {
+        if (V2[i][j] === A2) contA++;
+        else lineX.push(V2[i][j]);
+    }
+    X.push(lineX);
+}
 
-// console.log('\nMatriz informada');
-// console.log(ShowMatrix(V2));
-// console.log(`Numero inteiro A utilizado para busca: ${A2}`);
-// console.log(`Quantidade de valores iguais a A: ${contA}`);
-// console.log('\nMatriz Contendo os elementos diferentes de A');
-// console.log(ShowMatrix(X));
+console.log('\nMatriz informada');
+console.log(ShowMatrix(V2));
+console.log(`Numero inteiro A utilizado para busca: ${A2}`);
+console.log(`Quantidade de valores iguais a A: ${contA}`);
+console.log('\nMatriz Contendo os elementos diferentes de A');
+console.log(ShowMatrix(X));
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -216,26 +216,26 @@ todos os elementos de V diferentes de A. Mostre os resultados.
  matriz lida e a modificada.
 */
 
-// console.log('\n------------ DIVISÃO DE ELEMENTOS NA MATRIZ  ------------\n');
+console.log('\n------------ DIVISÃO DE ELEMENTOS NA MATRIZ  ------------\n');
 
-// const M12X13 = [];
-// const M12X13MODIFIED = [];
+const M12X13 = [];
+const M12X13MODIFIED = [];
 
-// ReadMatrix(M12X13, 12, 13);
+ReadMatrix(M12X13, 12, 13);
 
-// for (let i = 0; i < M12X13.length; i++) {
-//     let largestElement = Math.max(...M12X13[i]);
-//     let lineM12X13MODIFIED = [];
-//     for (let j = 0; j < M12X13[i].length; j++) {
-//         lineM12X13MODIFIED.push((M12X13[i][j] / largestElement).toFixed(2));
-//     }
-//     M12X13MODIFIED.push(lineM12X13MODIFIED);
-// }
+for (let i = 0; i < M12X13.length; i++) {
+    let largestElement = Math.max(...M12X13[i]);
+    let lineM12X13MODIFIED = [];
+    for (let j = 0; j < M12X13[i].length; j++) {
+        lineM12X13MODIFIED.push((M12X13[i][j] / largestElement).toFixed(2));
+    }
+    M12X13MODIFIED.push(lineM12X13MODIFIED);
+}
 
-// console.log('\nMatriz Informada');
-// console.log(ShowMatrix(M12X13));
-// console.log('\nMatriz Modificada');
-// console.log(ShowMatrix(M12X13MODIFIED));
+console.log('\nMatriz Informada');
+console.log(ShowMatrix(M12X13));
+console.log('\nMatriz Modificada');
+console.log(ShowMatrix(M12X13MODIFIED));
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -244,44 +244,44 @@ todos os elementos de V diferentes de A. Mostre os resultados.
  33. Faça um algoritmo que leia uma matriz 3 x 3 e após a leitura, multiplique os
  elementos da diagonal principal com a média dos elementos da diagonal secundária.
 */
-// console.log('\n------------ MULTIPLICANDO DIAGONAIS  ------------\n');
+console.log('\n------------ MULTIPLICANDO DIAGONAIS  ------------\n');
 
-// const M3X3 = [];
+const M3X3 = [];
 
-// ReadMatrix(M3X3, 3, 3);
+ReadMatrix(M3X3, 3, 3);
 
-// let diagonal = [];
-// for (let i = 0; i < M3X3.length; i++) {
-//     diagonal.push(M3X3[i][M3X3.length - 1 - i]);
-// }
+let diagonal = [];
+for (let i = 0; i < M3X3.length; i++) {
+    diagonal.push(M3X3[i][M3X3.length - 1 - i]);
+}
 
-// let totalSumDiagonalSecondary = 0;
-// let totalTermsDiagonalSecondary = 0;
-// for (element of diagonal) {
-//     totalSumDiagonalSecondary += element;
-//     totalTermsDiagonalSecondary++;
-// }
+let totalSumDiagonalSecondary = 0;
+let totalTermsDiagonalSecondary = 0;
+for (element of diagonal) {
+    totalSumDiagonalSecondary += element;
+    totalTermsDiagonalSecondary++;
+}
 
-// let averageDiagonalSecondary = (totalSumDiagonalSecondary / totalTermsDiagonalSecondary).toFixed(2);
-// let elementsDiagonalPrincipal = [];
-// let elementsDiagonalPrincipalModified = [];
-// for (let i = 0; i < M3X3.length; i++) {
-//     for (let j = 0; j < M3X3[i].length; j++) {
-//         if (i === j) {
-//             elementsDiagonalPrincipal.push(M3X3[i][j]);
-//             elementsDiagonalPrincipalModified.push(M3X3[i][j] * averageDiagonalSecondary);
-//         }
-//     }
-// }
-// console.log('\nMatriz informada');
-// console.log(ShowMatrix(M3X3));
-// console.log('A Diagonal secundária é formada por: ')
-// console.log(diagonal);
-// console.log(`A média desses elementos é de: ${averageDiagonalSecondary}`);
-// console.log('\nA Diagonal principal é formada por: ')
-// console.log(elementsDiagonalPrincipal);
-// console.log('\nA Diagonal principal multiplicada pela média da diagonal secundaria é:');
-// console.log(elementsDiagonalPrincipalModified);
+let averageDiagonalSecondary = (totalSumDiagonalSecondary / totalTermsDiagonalSecondary).toFixed(2);
+let elementsDiagonalPrincipal = [];
+let elementsDiagonalPrincipalModified = [];
+for (let i = 0; i < M3X3.length; i++) {
+    for (let j = 0; j < M3X3[i].length; j++) {
+        if (i === j) {
+            elementsDiagonalPrincipal.push(M3X3[i][j]);
+            elementsDiagonalPrincipalModified.push(M3X3[i][j] * averageDiagonalSecondary);
+        }
+    }
+}
+console.log('\nMatriz informada');
+console.log(ShowMatrix(M3X3));
+console.log('A Diagonal secundária é formada por: ')
+console.log(diagonal);
+console.log(`A média desses elementos é de: ${averageDiagonalSecondary}`);
+console.log('\nA Diagonal principal é formada por: ')
+console.log(elementsDiagonalPrincipal);
+console.log('\nA Diagonal principal multiplicada pela média da diagonal secundaria é:');
+console.log(elementsDiagonalPrincipalModified);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -290,26 +290,26 @@ todos os elementos de V diferentes de A. Mostre os resultados.
  cada linha pelo elemento da diagonal principal daquela linha. Mostre a matriz após as
  multiplicações.
  */
-// console.log('\n------------ MULTIPLICANDO DIAGONAIS EM UMA MATRIZ 50X50  ------------\n');
+console.log('\n------------ MULTIPLICANDO DIAGONAIS EM UMA MATRIZ 50X50  ------------\n');
 
-// const M50X50 = [];
-// const M50X50MODIFIED = [];
+const M50X50 = [];
+const M50X50MODIFIED = [];
 
-// ReadMatrix(M50X50, 50, 50);
+ReadMatrix(M50X50, 50, 50);
 
-// for (let i = 0; i < M50X50.length; i++) {
-//     let operand = M50X50[i][i];
-//     let lineM50x50MODIFIED = [];
-//     for (let j = 0; j < M50X50[i].length; j++) {
-//         lineM50x50MODIFIED.push(M50X50[i][j] * operand);
-//     }
-//     M50X50MODIFIED.push(lineM50x50MODIFIED);
-// }
+for (let i = 0; i < M50X50.length; i++) {
+    let operand = M50X50[i][i];
+    let lineM50x50MODIFIED = [];
+    for (let j = 0; j < M50X50[i].length; j++) {
+        lineM50x50MODIFIED.push(M50X50[i][j] * operand);
+    }
+    M50X50MODIFIED.push(lineM50x50MODIFIED);
+}
 
-// console.log('\nMatriz informada');
-// console.log(ShowMatrix(M50X50));
-// console.log('\nMatriz multiplicada');
-// console.log(ShowMatrix(M50X50MODIFIED));
+console.log('\nMatriz informada');
+console.log(ShowMatrix(M50X50));
+console.log('\nMatriz multiplicada');
+console.log(ShowMatrix(M50X50MODIFIED));
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -320,35 +320,35 @@ todos os elementos de V diferentes de A. Mostre os resultados.
  vetor pode ser preenchido quantas vezes forem necessárias.
 */
 
-// console.log('\n------------ LENDO UM CONJUNTO DE 30 VALORES PARES OU IMPARES  ------------\n');
+console.log('\n------------ LENDO UM CONJUNTO DE 30 VALORES PARES OU IMPARES  ------------\n');
 
-// const OddOrEven = new Object();
-// let pair = [];
-// let odd = [];
+const OddOrEven = new Object();
+let pair = [];
+let odd = [];
 
-// for (let i = 0; i < 30; i++) {
-//     OddOrEven[i] = parseInt(prompt(`${i + 1}º: `));
-//     if (OddOrEven[i] % 2 === 0) {
-//         if (pair.length === 5) {
-//             console.log(pair);
-//             pair = [];
-//         }
-//         pair.push(OddOrEven[i]);
-//     } else if (OddOrEven[i] % 2 !== 0) {
-//         if (odd.length === 5) {
-//             console.log(odd);
-//             odd = [];
-//         }
-//         odd.push(OddOrEven[i]);
-//     }
-// }
+for (let i = 0; i < 30; i++) {
+    OddOrEven[i] = parseInt(prompt(`${i + 1}º: `));
+    if (OddOrEven[i] % 2 === 0) {
+        if (pair.length === 5) {
+            console.log(pair);
+            pair = [];
+        }
+        pair.push(OddOrEven[i]);
+    } else if (OddOrEven[i] % 2 !== 0) {
+        if (odd.length === 5) {
+            console.log(odd);
+            odd = [];
+        }
+        odd.push(OddOrEven[i]);
+    }
+}
 
-// console.log('\nConjunto informado');
-// console.log(OddOrEven);
-// console.log('\nVetor Pares');
-// console.log(pair);
-// console.log('\nVetor Impares');
-// console.log(odd);
+console.log('\nConjunto informado');
+console.log(OddOrEven);
+console.log('\nVetor Pares');
+console.log(pair);
+console.log('\nVetor Impares');
+console.log(odd);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -361,40 +361,40 @@ todos os elementos de V diferentes de A. Mostre os resultados.
  mensagem"Parabéns, tu foi o GANHADOR"
 */
 
-// console.log('\n------------ LOTERIA  ------------\n');
+console.log('\n------------ LOTERIA  ------------\n');
 
-// const Gabarito = [];
-// const Apostadores = [];
+const Gabarito = [];
+const Apostadores = [];
 
-// for (let i = 0; i < 13; i++) {
-//     Gabarito.push(parseInt(prompt(`Informe o ${i + 1}º número do gabarito: `)));
-// }
+for (let i = 0; i < 13; i++) {
+    Gabarito.push(parseInt(prompt(`Informe o ${i + 1}º número do gabarito: `)));
+}
 
-// for (let i = 0; i < 100; i++) {
-//     let apostador = {
-//         "Numero do Cartão": "",
-//         Respostas: []
-//     };
-//     console.log(`${i + 1}º Apostador`)
-//     apostador['Numero do Cartão'] = parseInt(prompt('Informe o número do cartão: '));
-//     let respostas = [];
-//     for (let i = 0; i < 13; i++) {
-//         respostas.push(parseInt(prompt(`Informe o ${i + 1}º número: `)));
-//     }
-//     apostador.Respostas = respostas;
-//     Apostadores.push(apostador);
-// }
+for (let i = 0; i < 100; i++) {
+    let apostador = {
+        "Numero do Cartão": "",
+        Respostas: []
+    };
+    console.log(`${i + 1}º Apostador`)
+    apostador['Numero do Cartão'] = parseInt(prompt('Informe o número do cartão: '));
+    let respostas = [];
+    for (let i = 0; i < 13; i++) {
+        respostas.push(parseInt(prompt(`Informe o ${i + 1}º número: `)));
+    }
+    apostador.Respostas = respostas;
+    Apostadores.push(apostador);
+}
 
-// for (let i = 0; i < 100; i++) {
-//     let acertos = 0;
-//     for (let j = 0; j < 13; j++) {
-//         let respostasApostador = Apostadores[i].Respostas;
-//         if (respostasApostador[j] === Gabarito[j]) acertos++;
-//     }
-//     console.log('\nNumero do ' + (i + 1) + 'º apostador: ' + Apostadores[i]['Numero do Cartão']);
-//     console.log('Numero de acertos: ' + acertos);
-//     if (acertos === Gabarito.length) console.log('Parabéns, tu foi o GANHADOR');
-// }
+for (let i = 0; i < 100; i++) {
+    let acertos = 0;
+    for (let j = 0; j < 13; j++) {
+        let respostasApostador = Apostadores[i].Respostas;
+        if (respostasApostador[j] === Gabarito[j]) acertos++;
+    }
+    console.log('\nNumero do ' + (i + 1) + 'º apostador: ' + Apostadores[i]['Numero do Cartão']);
+    console.log('Numero de acertos: ' + acertos);
+    if (acertos === Gabarito.length) console.log('Parabéns, tu foi o GANHADOR');
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -406,54 +406,54 @@ todos os elementos de V diferentes de A. Mostre os resultados.
  e mostre uma mensagem de “REPROVADO”, caso contrário.
  */
 
-// console.log('\n------------ GABARITO DA PROVA  ------------\n');
+console.log('\n------------ GABARITO DA PROVA  ------------\n');
 
-// const vetorG = new Array(20);
-// const Alunos = [];
+const vetorG = new Array(20);
+const Alunos = [];
 
-// lerCaracteres(vetorG);
+lerCaracteres(vetorG);
 
-// for (let i = 0; i < 50; i++) {
-//     let aluno = {
-//         Nome: "",
-//         Respostas: []
-//     };
+for (let i = 0; i < 50; i++) {
+    let aluno = {
+        Nome: "",
+        Respostas: []
+    };
 
-//     console.log(`${i + 1}º Aluno`)
-//     aluno.Nome = prompt('Informe o nome do aluno: ');
+    console.log(`${i + 1}º Aluno`)
+    aluno.Nome = prompt('Informe o nome do aluno: ');
 
-//     let respostas = new Array(20);
-//     lerCaracteres(respostas);
+    let respostas = new Array(20);
+    lerCaracteres(respostas);
 
-//     aluno.Respostas = respostas;
-//     Alunos.push(aluno);
-// }
+    aluno.Respostas = respostas;
+    Alunos.push(aluno);
+}
 
-// for (let i = 0; i < 50; i++) {
-//     let acertos = 0;
-//     for (let j = 0; j < 20; j++) {
-//         let respostasAluno = Alunos[i].Respostas;
-//         if (respostasAluno[j] === vetorG[j]) acertos++;
-//     }
-//     console.log('\nNome do Aluno : ' + Alunos[i].Nome);
-//     console.log('Numero de acertos: ' + acertos);
-//     if (acertos >= 12) console.log('APROVADO!');
-//     else console.log('REPROVADO!');
-// }
+for (let i = 0; i < 50; i++) {
+    let acertos = 0;
+    for (let j = 0; j < 20; j++) {
+        let respostasAluno = Alunos[i].Respostas;
+        if (respostasAluno[j] === vetorG[j]) acertos++;
+    }
+    console.log('\nNome do Aluno : ' + Alunos[i].Nome);
+    console.log('Numero de acertos: ' + acertos);
+    if (acertos >= 12) console.log('APROVADO!');
+    else console.log('REPROVADO!');
+}
 
-// function lerCaracteres(vetor) {
-//     for (let i = 0; i < 20; i++) {
-//         let caractere;
-//         do {
-//             caractere = prompt(`Digite o ${i + 1}º caractere:`);
-//         } while (!validaCaractere(caractere));
-//         vetor[i] = caractere;
-//     }
-// }
+function lerCaracteres(vetor) {
+    for (let i = 0; i < 20; i++) {
+        let caractere;
+        do {
+            caractere = prompt(`Digite o ${i + 1}º caractere:`);
+        } while (!validaCaractere(caractere));
+        vetor[i] = caractere;
+    }
+}
 
-// function validaCaractere(caractere) {
-//     return /^[a-eA-E]$/.test(caractere);
-// }
+function validaCaractere(caractere) {
+    return /^[a-eA-E]$/.test(caractere);
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -468,77 +468,77 @@ todos os elementos de V diferentes de A. Mostre os resultados.
  5- mostre o vetor.
  */
 
-// console.log('\n------------ MENU VETOR ------------\n');
+console.log('\n------------ MENU VETOR ------------\n');
 
-// const vetor6 = new Array(6);
-// let operador = -1;
+const vetor6 = new Array(6);
+let operador = -1;
 
-// for (let i = 0; i < vetor6.length; i++) {
-//     vetor6[i] = parseInt(prompt(`Informe o ${i + 1}º elemento do vetor: `));
-// }
+for (let i = 0; i < vetor6.length; i++) {
+    vetor6[i] = parseInt(prompt(`Informe o ${i + 1}º elemento do vetor: `));
+}
 
-// console.log('\n----------- MENU -------------')
-// console.log('1- soma dos elementos',
-//     '\n2- produto dos elementos',
-//     '\n3- média dos elementos',
-//     '\n4- ordene os elementos em ordem crescente',
-//     '\n5- mostre o vetor');
+console.log('\n----------- MENU -------------')
+console.log('1- soma dos elementos',
+    '\n2- produto dos elementos',
+    '\n3- média dos elementos',
+    '\n4- ordene os elementos em ordem crescente',
+    '\n5- mostre o vetor');
 
-// operador = parseInt(prompt('Informe o que deseja fazer: '));
+operador = parseInt(prompt('Informe o que deseja fazer: '));
 
-// let resultado = 0;
-// switch (operador) {
-//     case 1:
-//         for (numero of vetor6) {
-//             resultado += numero;
-//         }
-//         console.log('O resultado da soma dos elementos é: ' + resultado);
-//         break;
-//     case 2:
-//         resultado = vetor6[0];
-//         for (let i = 1; i < vetor6.length; i++) {
-//             resultado *= vetor6[i];
-//         }
-//         console.log('O produto dos elementos é: ' + resultado);
-//         break;
-//     case 3:
-//         for (numero of vetor6) {
-//             resultado += numero;
-//         }
-//         let media = resultado / vetor6.length;
-//         console.log('A média dos elementos é: ' + media.toFixed(2));
-//         break;
-//     case 4:
-//         console.log('Os elementos em ordem crescente são:');
-//         console.log(vetor6.sort());
-//         break;
-//     case 5:
-//         console.log(vetor6);
-//         break;
-// }
+let resultado = 0;
+switch (operador) {
+    case 1:
+        for (numero of vetor6) {
+            resultado += numero;
+        }
+        console.log('O resultado da soma dos elementos é: ' + resultado);
+        break;
+    case 2:
+        resultado = vetor6[0];
+        for (let i = 1; i < vetor6.length; i++) {
+            resultado *= vetor6[i];
+        }
+        console.log('O produto dos elementos é: ' + resultado);
+        break;
+    case 3:
+        for (numero of vetor6) {
+            resultado += numero;
+        }
+        let media = resultado / vetor6.length;
+        console.log('A média dos elementos é: ' + media.toFixed(2));
+        break;
+    case 4:
+        console.log('Os elementos em ordem crescente são:');
+        console.log(vetor6.sort());
+        break;
+    case 5:
+        console.log(vetor6);
+        break;
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 /* 39. Faça um algoritmo que leia um vetor (A) de 100 posições. Em seguida, compacte o
  vetor, retirando os valores nulos e negativos. Coloque o resultado no vetor B.
  */
-// console.log('\n------------ VETOR A 100 ------------\n');
+console.log('\n------------ VETOR A 100 ------------\n');
 
-// const vetorA100 = [];
-// let vetorB = [];
+const vetorA100 = [];
+let vetorB = [];
 
-// for (let i = 0; i < 5; i++) {
-//     vetorA100.push(parseInt(prompt('Informe um número para inserir no vetor: ')));
-// }
+for (let i = 0; i < 5; i++) {
+    vetorA100.push(parseInt(prompt('Informe um número para inserir no vetor: ')));
+}
 
-// for (let i = 0; i < vetorA100.length; i++) {
-//     if (vetorA100[i] === NaN) vetorA100.pop();
-//     if (vetorA100[i] > 0) {
-//         if (vetorA100[i] !== null) vetorB.push(vetorA100[i]);
-//     }
-// }
-// console.log(vetorA100);
-// console.log(vetorB);
+for (let i = 0; i < vetorA100.length; i++) {
+    if (vetorA100[i] === NaN) vetorA100.pop();
+    if (vetorA100[i] > 0) {
+        if (vetorA100[i] !== null) vetorB.push(vetorA100[i]);
+    }
+}
+console.log(vetorA100);
+console.log(vetorB);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -551,42 +551,42 @@ todos os elementos de V diferentes de A. Mostre os resultados.
  e quadras, apenas por quinas.)
  */
 
-// console.log('\n------------ LOTO ------------\n');
+console.log('\n------------ LOTO ------------\n');
 
-// console.log('Informe os números sorteados: ');
-// const vetorLoto = lerVetor();
-// const jogos = [];
+console.log('Informe os números sorteados: ');
+const vetorLoto = lerVetor();
+const jogos = [];
 
-// console.log('\nInforme os Jogos: ');
-// for (let i = 0; i < 50; i++) {
-//     console.log(`${i + 1}º Jogo: `);
-//     let aposta = lerVetor();
-//     jogos.push(aposta);
-// }
+console.log('\nInforme os Jogos: ');
+for (let i = 0; i < 50; i++) {
+    console.log(`${i + 1}º Jogo: `);
+    let aposta = lerVetor();
+    jogos.push(aposta);
+}
 
-// for (let i = 0; i < jogos.length; i++) {
-//     let acertos = 0;
-//     for (let j = 0; j < jogos[i].length; j++)
-//         if (jogos[i][j] === vetorLoto[j]) acertos++;
-//     if (acertos === jogos[i].length) {
-//         console.log(`\nA aposta nº ${i + 1}: [ ` + jogos[i] + ' ]');
-//         console.log('Foi um Ganhador!');
-//     }
-// }
+for (let i = 0; i < jogos.length; i++) {
+    let acertos = 0;
+    for (let j = 0; j < jogos[i].length; j++)
+        if (jogos[i][j] === vetorLoto[j]) acertos++;
+    if (acertos === jogos[i].length) {
+        console.log(`\nA aposta nº ${i + 1}: [ ` + jogos[i] + ' ]');
+        console.log('Foi um Ganhador!');
+    }
+}
 
-// function lerVetor() {
-//     const vetor = [];
-//     for (let i = 0; i < 5; i++) {
-//         let numero = 0;
-//         while (true) {
-//             numero = parseInt(prompt(`Digite o ${i + 1}º número (01 ao 25): `));
-//             if (numero < 1 || numero > 25) console.log('Número fora do intervalo permitido!');
-//             else break;
-//         }
-//         vetor.push(numero);
-//     }
-//     return vetor.sort();
-// }
+function lerVetor() {
+    const vetor = [];
+    for (let i = 0; i < 5; i++) {
+        let numero = 0;
+        while (true) {
+            numero = parseInt(prompt(`Digite o ${i + 1}º número (01 ao 25): `));
+            if (numero < 1 || numero > 25) console.log('Número fora do intervalo permitido!');
+            else break;
+        }
+        vetor.push(numero);
+    }
+    return vetor.sort();
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -595,18 +595,18 @@ todos os elementos de V diferentes de A. Mostre os resultados.
  idade. Adicione uma nova propriedade chamada email ao objeto pessoa que já possui
  nome e idade.
 */
-// console.log('\n------------ PESSOA ------------\n');
+console.log('\n------------ PESSOA ------------\n');
 
-// let Pessoa = {
-//     Nome: 'Leonardo',
-//     Idade: 33
-// }
+let Pessoa = {
+    Nome: 'Leonardo',
+    Idade: 33
+}
 
-// console.log(`${Pessoa.Nome} tem ${Pessoa.Idade} anos.`);
+console.log(`${Pessoa.Nome} tem ${Pessoa.Idade} anos.`);
 
-// Pessoa.Email = 'leonardomonteirolima@gmail.com';
+Pessoa.Email = 'leonardomonteirolima@gmail.com';
 
-// console.log(Pessoa);
+console.log(Pessoa);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -616,32 +616,32 @@ todos os elementos de V diferentes de A. Mostre os resultados.
  propriedades que são arrays.
 */
 
-// console.log('\n------------ OBJETO DADOS ------------\n');
+console.log('\n------------ OBJETO DADOS ------------\n');
 
-// let Dados = {
-//     nome: "Alice",
-//     idade: 2,
-//     cidade: "Friburgo",
-//     'Cores Favoritas': ["vermelho", "azul", "verde"],
-//     'Animais de Estimação': ["gato", "cachorro", "coelho"],
-// };
+let Dados = {
+    nome: "Alice",
+    idade: 2,
+    cidade: "Friburgo",
+    'Cores Favoritas': ["vermelho", "azul", "verde"],
+    'Animais de Estimação': ["gato", "cachorro", "coelho"],
+};
 
-// let apenasArrays = verificarArrays(Dados);
+let apenasArrays = verificarArrays(Dados);
 
-// console.log('Dados iniciais:');
-// console.log(Dados);
-// console.log('\nApenas os arrays: ');
-// console.log(apenasArrays);
+console.log('Dados iniciais:');
+console.log(Dados);
+console.log('\nApenas os arrays: ');
+console.log(apenasArrays);
 
-// function verificarArrays(objeto) {
-//     let resultado = {};
-//     for (let propriedade in objeto) {
-//         if (Array.isArray(objeto[propriedade])) {
-//             resultado[propriedade] = objeto[propriedade];
-//         }
-//     }
-//     return resultado;
-// }
+function verificarArrays(objeto) {
+    let resultado = {};
+    for (let propriedade in objeto) {
+        if (Array.isArray(objeto[propriedade])) {
+            resultado[propriedade] = objeto[propriedade];
+        }
+    }
+    return resultado;
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -651,34 +651,34 @@ todos os elementos de V diferentes de A. Mostre os resultados.
  sobre as do obj1 em caso de conflitos.
 */
 
-// console.log('\n------------ COMBINANDO OBJETOS ------------\n');
+console.log('\n------------ COMBINANDO OBJETOS ------------\n');
 
 
-// const obj1 = {
-//     Nome: 'Samuel',
-//     Idade: 8,
-//     Cidade: 'Rio de Janeiro',
-//     CPF: '111.000.333-08'
-// };
+const obj1 = {
+    Nome: 'Samuel',
+    Idade: 8,
+    Cidade: 'Rio de Janeiro',
+    CPF: '111.000.333-08'
+};
 
-// const obj2 = {
-//     Nome: 'Leonardo',
-//     Idade: 33,
-//     Cidade: "Teresópolis",
-//     UF: 'RJ'
-// };
+const obj2 = {
+    Nome: 'Leonardo',
+    Idade: 33,
+    Cidade: "Teresópolis",
+    UF: 'RJ'
+};
 
-// let objetoCombinado = combinarObjetos(obj1, obj2);
-// console.log(objetoCombinado);
+let objetoCombinado = combinarObjetos(obj1, obj2);
+console.log(objetoCombinado);
 
-// function combinarObjetos(obj1, obj2) {
-//     let novoObjeto = {};
+function combinarObjetos(obj1, obj2) {
+    let novoObjeto = {};
 
-//     Object.assign(novoObjeto, obj1);
-//     Object.assign(novoObjeto, obj2);
+    Object.assign(novoObjeto, obj1);
+    Object.assign(novoObjeto, obj2);
 
-//     return novoObjeto;
-// }
+    return novoObjeto;
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -686,30 +686,30 @@ todos os elementos de V diferentes de A. Mostre os resultados.
 44. Escreva uma função que conte quantas propriedades do tipo string existem em um
  objeto e retorne esse número.
 */
-// console.log('\n------------ CONTANDO PROPRIEDADES DE UM OBJETO ------------\n');
+console.log('\n------------ CONTANDO PROPRIEDADES DE UM OBJETO ------------\n');
 
-// let Carro = {
-//     Modelo: "Mustang Mach1",
-//     Ano: 2023,
-//     Combustível: "Gasolina",
-//     Portas: 2,
-//     Motor: "V8",
-//     Marca: "Ford"
-// };
+let Carro = {
+    Modelo: "Mustang Mach1",
+    Ano: 2023,
+    Combustível: "Gasolina",
+    Portas: 2,
+    Motor: "V8",
+    Marca: "Ford"
+};
 
-// let numeroDeStrings = ContarPropriedades(Carro);
-// console.log(Carro);
-// console.log(`Número de propriedades do tipo string: ${numeroDeStrings}`);
+let numeroDeStrings = ContarPropriedades(Carro);
+console.log(Carro);
+console.log(`Número de propriedades do tipo string: ${numeroDeStrings}`);
 
-// function ContarPropriedades(objeto) {
-//     let contador = 0;
-//     let propriedades = Object.keys(objeto);
+function ContarPropriedades(objeto) {
+    let contador = 0;
+    let propriedades = Object.keys(objeto);
 
-//     for (propriedade of propriedades)
-//         if (typeof objeto[propriedade] === "string") contador++;
+    for (propriedade of propriedades)
+        if (typeof objeto[propriedade] === "string") contador++;
 
-//     return contador;
-// }
+    return contador;
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -717,22 +717,22 @@ todos os elementos de V diferentes de A. Mostre os resultados.
 45. Dado um array de strings, crie um objeto onde cada string é uma chave, e seu valor é
 o número de vezes que a string aparece no array.
 */
-// console.log('\n------------ OBJETO COM ARRAY DE STRINGS ------------\n');
+console.log('\n------------ OBJETO COM ARRAY DE STRINGS ------------\n');
 
-// const Frutas = ["maçã", "banana", "laranja", "uva", "pera", "maçã", "abacaxi", "banana", "morango", "uva", "pêssego", "laranja", "laranja",
-//     "kiwi", "pera", "morango", "abacate", "kiwi", "pera", "pera"];
+const Frutas = ["maçã", "banana", "laranja", "uva", "pera", "maçã", "abacaxi", "banana", "morango", "uva", "pêssego", "laranja", "laranja",
+    "kiwi", "pera", "morango", "abacate", "kiwi", "pera", "pera"];
 
-// let ObjetoFrutas = {};
+let ObjetoFrutas = {};
 
-// for (fruta of Frutas) {
-//     if (ObjetoFrutas[fruta]) {
-//         ObjetoFrutas[fruta]++;
-//     } else {
-//         ObjetoFrutas[fruta] = 1;
-//     }
-// }
+for (fruta of Frutas) {
+    if (ObjetoFrutas[fruta]) {
+        ObjetoFrutas[fruta]++;
+    } else {
+        ObjetoFrutas[fruta] = 1;
+    }
+}
 
-// console.log(ObjetoFrutas);
+console.log(ObjetoFrutas);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -742,29 +742,29 @@ com vendedor e valor. Escreva uma função que retorne um objeto que sumarize o 
 de vendas por vendedor.
 */
 
-// console.log('\n------------ OBJETO VENDAS ------------\n');
+console.log('\n------------ OBJETO VENDAS ------------\n');
 
-// const Vendas = [{ Vendedor: 'Leonardo', Valor: 1500 }, { Vendedor: 'Fabiana', Valor: 2000 }, { Vendedor: 'Miguel', Valor: 1600 },
-// { Vendedor: 'Leonardo', Valor: 3500 }, { Vendedor: 'Fabiana', Valor: 1100 }, { Vendedor: 'Miguel', Valor: 4000 },
-// { Vendedor: 'Leonardo', Valor: 1800 }, { Vendedor: 'Fabiana', Valor: 3000 }, { Vendedor: 'Miguel', Valor: 1100 },
-// { Vendedor: 'Leonardo', Valor: 1100 }, { Vendedor: 'Fabiana', Valor: 1900 }, { Vendedor: 'Miguel', Valor: 1700 }
-// ];
+const Vendas = [{ Vendedor: 'Leonardo', Valor: 1500 }, { Vendedor: 'Fabiana', Valor: 2000 }, { Vendedor: 'Miguel', Valor: 1600 },
+{ Vendedor: 'Leonardo', Valor: 3500 }, { Vendedor: 'Fabiana', Valor: 1100 }, { Vendedor: 'Miguel', Valor: 4000 },
+{ Vendedor: 'Leonardo', Valor: 1800 }, { Vendedor: 'Fabiana', Valor: 3000 }, { Vendedor: 'Miguel', Valor: 1100 },
+{ Vendedor: 'Leonardo', Valor: 1100 }, { Vendedor: 'Fabiana', Valor: 1900 }, { Vendedor: 'Miguel', Valor: 1700 }
+];
 
-// let vendasPorVendedor = sumarizarVendas(Vendas);
-// console.log(vendasPorVendedor);
+let vendasPorVendedor = sumarizarVendas(Vendas);
+console.log(vendasPorVendedor);
 
-// function sumarizarVendas(vendas) {
-//     let totalVendas = {};
-//     for (venda of vendas) {
-//         let { Vendedor, Valor } = venda;
-//         if (totalVendas[Vendedor]) {
-//             totalVendas[Vendedor] += Valor;
-//         } else {
-//             totalVendas[Vendedor] = Valor;
-//         }
-//     }
-//     return totalVendas;
-// }
+function sumarizarVendas(vendas) {
+    let totalVendas = {};
+    for (venda of vendas) {
+        let { Vendedor, Valor } = venda;
+        if (totalVendas[Vendedor]) {
+            totalVendas[Vendedor] += Valor;
+        } else {
+            totalVendas[Vendedor] = Valor;
+        }
+    }
+    return totalVendas;
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -773,6 +773,132 @@ de vendas por vendedor.
 fornecida a cada uma das propriedades do objeto, retornando um novo objeto com os
 resultados.
 */
+console.log('\n------------ TRANSFORMANDO UM OBJETO ------------\n');
+
+const ObjetoEntrada = {
+    Nome: "leonardo",
+    Cidade: "teresópolis",
+    UF: 'rj'
+};
+
+let objetoTransformado = transformaObjeto(ObjetoEntrada, transformar);
+console.log('Objeto inicial:');
+console.log(ObjetoEntrada);
+console.log('\nObjeto transformado:');
+console.log(objetoTransformado);
+
+function transformar(valor) {
+    return valor.toUpperCase();
+}
+
+function transformaObjeto(objeto, funcao) {
+    let objetoTransformado = {};
+
+    Object.keys(objeto).forEach((key) => {
+        objetoTransformado[key] = funcao(objeto[key]);
+    });
+
+    return objetoTransformado;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+48. Você recebe dois objetos que representam o inventário de duas lojas diferentes:
+ inventarioLojaA e inventarioLojaB. Cada chave é um item, e o valor é a quantidade desse
+ item em estoque. Escreva uma função que combine os inventários em um único objeto.
+ Se um item aparecer em ambas as lojas, some as quantidades.
+*/
+
+console.log('\n------------ INVENTÁRIO DAS LOJAS ------------\n');
+
+const inventarioLojaA = { Teclados: 20, Mouses: 10, Monitores: 5, Notebooks: 2, Impressoras: 4, CabosHDMI: 33, Roteadores: 10 };
+const inventarioLojaB = { Teclados: 30, Mouses: 22, Monitores: 3, Notebooks: 1, Pendrives: 40, Adaptadores: 25 };
+
+function sumarizarEstoque(lojaA, lojaB) {
+    let totalEstoque = {};
+
+    for (item in lojaA) {
+        totalEstoque[item] = lojaA[item];
+    }
+
+    for (item in lojaB) {
+        if (totalEstoque[item]) totalEstoque[item] += lojaB[item];
+        else totalEstoque[item] = lojaB[item];
+    }
+
+    return totalEstoque;
+}
+
+let estoqueTotal = sumarizarEstoque(inventarioLojaA, inventarioLojaB);
+
+console.log('Estoque loja A:');
+console.log(inventarioLojaA);
+console.log('\nEstoque loja B:');
+console.log(inventarioLojaB);
+console.log('\nEstoque Total:')
+console.log(estoqueTotal);
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+49. Você recebe um array de objetos representando transações financeiras. Cada
+ transação possui id, valor, data, e categoria. Escreva uma função que retorne um objeto
+ onde as chaves são as categorias, e os valores são arrays de transações pertencentes a
+ essa categoria. Adicionalmente, inclua um subtotal de valores por categoria.
+*/
+console.log('\n-------------------- TRANSAÇÕES FINANCEIRAS --------------------\n');
+
+const transacoesFinanceiras = [
+    { id: 1, valor: 10, data: "10-05-2024", categoria: "Alimentação" },
+    { id: 2, valor: 20, data: "01-05-2024", categoria: "Transporte" },
+    { id: 3, valor: 15, data: "01-05-2024", categoria: "Alimentação" },
+    { id: 4, valor: 150, data: "09-05-2024", categoria: "Educação" },
+    { id: 5, valor: 180, data: "05-05-2024", categoria: "Vestimenta" },
+    { id: 6, valor: 50, data: "20-05-2024", categoria: "Vestimenta" },
+    { id: 7, valor: 10, data: "6-05-2024", categoria: "Alimentação" },
+    { id: 8, valor: 50, data: "18-05-2024", categoria: "Lazer" },
+    { id: 9, valor: 15, data: "04-05-2024", categoria: "Alimentação" },
+    { id: 10, valor: 15, data: "14-05-2024", categoria: "Alimentação" },
+    { id: 11, valor: 25, data: "25-05-2024", categoria: "Lazer" },
+    { id: 12, valor: 1500, data: "20-05-2024", categoria: "Construção" },
+    { id: 13, valor: 6, data: "19-05-2024", categoria: "Alimentação" },
+    { id: 14, valor: 33, data: "13-05-2024", categoria: "Alimentação" },
+    { id: 15, valor: 40, data: "17-05-2024", categoria: "Vestimenta" },
+    { id: 16, valor: 150, data: "15-05-2024", categoria: "Beleza" },
+    { id: 17, valor: 25, data: "16-05-2024", categoria: "Beleza" },
+    { id: 18, valor: 15, data: "12-05-2024", categoria: "Alimentação" },
+];
+
+let transacoes = agruparTransacoes(transacoesFinanceiras);
+
+console.log('Resumo das transações:\n')
+for (categoria in transacoes) {
+    let { Transacoes, Subtotal } = transacoes[categoria];
+    console.log(`Categoria: ${categoria}`);
+    console.log(`Transações:`, Transacoes);
+    console.log(`Subtotal: R$ ${Subtotal.toFixed(2)}\n`);
+}
+
+function agruparTransacoes(transacoes) {
+    let categorias = {};
+
+    transacoes.forEach((transacao) => {
+        let { categoria, valor } = transacao;
+
+        if (!categorias[categoria]) {
+            categorias[categoria] = {
+                Transacoes: [],
+                Subtotal: 0,
+            };
+        }
+
+        categorias[categoria].Transacoes.push(transacao);
+        categorias[categoria].Subtotal += valor;
+    });
+
+    return categorias;
+}
 
 
 //////////////////////////////////////// COMMON FUNCTIONS //////////////////////////////////////// 
