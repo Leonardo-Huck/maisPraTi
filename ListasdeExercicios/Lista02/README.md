@@ -55,7 +55,7 @@ Abra um novo terminal
 
 Execute o programa com o node
 ```bash
-  node .\01-25.js //Para os exercícios do 01 ao 25
-  node .\26-49.js //Para os exercícios do 26 ao 49
-  node .\50.js //Para o exercício 50
+  node .\01-25.js       //Para os exercícios do 01 ao 25
+  node .\26-49.js       //Para os exercícios do 26 ao 49
+  node .\50.js          //Para o exercício 50
 ```
