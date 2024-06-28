@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visão Planejados</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <span id="visao">VISÃO</span>
+                <span id="planejados">PLANEJADOS</span>
+            </a>
+
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Galeria</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="theme-switch">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+                    <ion-icon name="moon-outline" class="moon"></ion-icon>
+                    <div class="switcher"></div>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="slider">
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="./assets/images/slide-cozinha.png" alt="Cozinha planejada">
+                    <img class="img-mobile" src="./assets/images/slide-cozinha-mobile.png" alt="Cozinha planejada">
+                </div>
+                <div class="slide-box">
+                    <img class="img-desktop" src="./assets/images/slide-home.jpg" alt="Sala de estar planejada">
+                    <img class="img-mobile" src="./assets/images/slide-home-mobile.jpg" alt="Cozinha planejada">
+                </div>
+                <div class="slide-box">
+                    <img class="img-desktop" src="./assets/images/slide-quarto.jpg" alt="Quarto planejado">
+                    <img class="img-mobile" src="./assets/images/slide-quarto-mobile.jpg" alt="Quarto planejado">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+
+            </div>
+        </section>
+        <section class="first-section">
+            <div class="intro-text">
+                <h1>Seu móvel planejado em até 15 dias!</h1>
+                <p>Do seu jeito, no seu espaço, em apenas 15 dias!</p>
+                <button class="btn">SAIBA MAIS</button>
+            </div>
+            <div class="iframe">
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/k07RwnGVrTE?si=2Q32_yVB6bHdY_3x"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <div class="grid">
+                <article class="secondArticles">
+                    <ion-icon name="rocket-outline" class="secondIcons"></ion-icon>
+                    <div>
+                        <h3>RAPIDEZ</h3>
+                        <p>Entrega em 15 dias úteis ou menor prazo em nosso calendário</p>
+                    </div>
+                </article>
+                <article class="secondArticles">
+                    <ion-icon name="reader-outline" class="secondIcons"></ion-icon>
+                    <div>
+                        <h3>GARANTIA</h3>
+                        <p>Móveis planejados com garantia de 6 anos.</p>
+                    </div>
+                </article>
+                <article class="secondArticles">
+                    <ion-icon name="storefront-outline" class="secondIcons"></ion-icon>
+                    <div>
+                        <h3>MARCENARIA PRÓPRIA</h3>
+                        <p>Sede própria em Teresópolis/RJ</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div id="rodape">
+            <div class="link-rodape">
+                <a href="#">Home</a>
+                <a href="#">Serviços</a>
+                <a href="#">Galeria</a>
+                <a href="#">Contato</a>
+            </div>
+            <div class="social-rodape">
+                <a href="@"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="@"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="@"><ion-icon name="logo-facebook"></ion-icon></a>
+            </div>
+        </div>
+        <p id="direitos">2024 -<a href="#">Visão Planejados</a> - Todos os direitos reservados &copy;</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

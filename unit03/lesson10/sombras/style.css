@@ -1,0 +1,14 @@
+#box {
+    width: 200px;
+    height: 200px;
+    background: rgb(42, 42, 221);
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+
+}
+
+#box h1 {
+    color: whitesmoke;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+}

@@ -1,0 +1,14 @@
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: #b9c941;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 50px;
+    /* box-sizing: border-box; */
+}
+
+.border {
+    margin-top: 35px;
+    border-radius: 150px 50px;
+}

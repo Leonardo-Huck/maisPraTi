@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inserindo JS</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script>
+        // let nome = prompt('Infomre um nome: ');
+        // let idade = parseInt(prompt('Infomre a idade: '));
+
+        // document.write('<h1>Mostrando o que foi capturado</h1>');
+        // document.write(`<p>O nome informado foi ${nome} e a idade foi ${idade}`);
+
+        // let numero1 = parseInt(prompt('Informe o primeiro número: '));
+        // let numero2 = parseInt(prompt('Informe o segundo número: '));
+        // let media = numero1 + numero2 / 2
+        
+        // // document.write(`<h2>A média dos números informados é ${media}</h2>`);
+        // function ClickMouse() {
+        //     document.write('<h1>Clicado na área!</h1>');
+        // }
+    </script>
+</head>
+
+<body>
+    <!-- <div style="background-color: blue; height: 200px; width: 200px; margin: 20px 0 0 20px;" onDBlclick="ClickMouse()">
+    </div> -->
+    <!-- <input type="text" onblur="ClickMouse()"> -->
+    <!-- <select onblur="ClickMouse()">
+        <option value="10">Gremio</option>
+        <option value="2">Flamengo</option>
+    </select> -->
+    <!-- <h1>Titulo 1</h1>
+    <input type="submit" onclick="alert('olá mundo!')">
+
+    <input type="text" placeholder="teste" id="nome" disabled="disabled">
+
+    <script src="script.js"></script> -->
+
+    <form name="formulario" id="formulario">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" maxlength="15" class="resultado" name="tela" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="C" class="botao" onclick="LimparTela()"></td>
+                <td><input type="button" value="Del" class="botao" onclick="Deletar()"></td>
+                <td><input type="button" value="-" class="botao" onclick="Inserir('-')"></td>
+                <td><input type="button" value="+" class="botao" onclick="Inserir('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" class="botao" onclick="Inserir('1')"></td>
+                <td><input type="button" value="2" class="botao" onclick="Inserir('2')"></td>
+                <td><input type="button" value="3" class="botao" onclick="Inserir('3')"></td>
+                <td><input type="button" value="/" class="botao" onclick="Inserir('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" class="botao" onclick="Inserir('4')"></td>
+                <td><input type="button" value="5" class="botao" onclick="Inserir('5')"></td>
+                <td><input type="button" value="6" class="botao" onclick="Inserir('6')"></td>
+                <td><input type="button" value="*" class="botao" onclick="Inserir('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" class="botao" onclick="Inserir('7')"></td>
+                <td><input type="button" value="8" class="botao" onclick="Inserir('8')"></td>
+                <td><input type="button" value="9" class="botao" onclick="Inserir('9')"></td>
+                <td><input type="button" value="=" class="botao" onclick="CalcularTotal()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." class="botao" onclick="Inserir('.')"></td>
+                <td><input type="button" value="0" class="botao" onclick="Inserir('0')"></td>
+            </tr>
+        </table>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

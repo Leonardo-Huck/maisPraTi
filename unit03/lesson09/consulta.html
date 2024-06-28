@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta de Produtos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img id="logo" src="img/entregavel.png">
+            </div>
+            <ul>
+                <li><a href="index.html">Cadastro</a></li>
+                <li><a href="consulta.html">Consulta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="formulario-consulta-produto">
+        <h2>Consulta de Produtos</h2>
+        <form>
+            <div class="grupo-formulario">
+                <label for="nome" class="rotulo-formulario">Nome do Produto:</label>
+                <input type="text" id="nome" name="nome" class="entrada-formulario-consulta" required>
+            </div>
+
+            <button type="button" class="botao-formulario" onclick="SearchProdutos()">Procurar</button>
+
+            <hr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Descrição</th>
+                    </tr>
+                </thead>
+                <tbody id="list-produtos">
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

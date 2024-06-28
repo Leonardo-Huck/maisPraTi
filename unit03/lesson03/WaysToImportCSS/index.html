@@ -5,12 +5,30 @@
     <meta charset="UTF-8">
     <title>Maneiras de importar as CSS</title>
     <style>
-        @import url("estilo.css");
+        /* @import url("estilo.css"); */
+        table {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #2d73a1;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Estilizando listas</h1>
+    <!-- <h1>Estilizando listas</h1>
     <h2>Coffe Break!</h2>
     <ul>
         <li>Coffee</li>
@@ -22,7 +40,35 @@
         <li>Cookie</li>
         <li>Bread</li>
         <li>Muffin</li>
-    </ul>
+    </ul> -->
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>País</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>30</td>
+            <td>Brasil</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>25</td>
+            <td>Portugal</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>25</td>
+            <td>Israel</td>
+        </tr>
+        <tr>
+            <td>Paulo</td>
+            <td>35</td>
+            <td>Roma</td>
+        </tr>
+    </table>
 
 </body>
 

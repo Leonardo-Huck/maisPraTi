@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<filmes>
+    <filme id="1">
+        <titulo>Kill Bill</titulo>
+        <resumo>
+        Kill Bill conta a história de vingança da Noiva/Beatrix Kiddo (The Bride/Beatrix Kiddo) interpretada por Uma Thurman contra seus ex-parceiros do Deadly Viper Assassination Squad (Esquadrão Assassino de Víboras Mortais)". Há várias referências à cultura pop, ao subgênero western spaghetti, trash, blaxploitation, anime e filmes antigos asiáticos de samurai e kung fu (Wuxia).
+        Quentin Tarantino ofereceu a protagonista de Kill Bill a Uma Thurman em 2000, como presente de aniversário de 30 anos. O diretor teve a ideia do roteiro quando realizou Pulp Fiction, também estrelado pela atriz.[1]
+        </resumo>
+        <genero>Ação</genero>
+        <elenco>
+            <ator>Beatrix Kiddo</ator>
+            <ator>The Bride</ator>
+        </elenco>
+    </filme>
+    <filme id="2">
+        <titulo>Matrix</titulo>
+        <resumo>
+        Matrix é um filme de ficção científica e ação que narra a história de Neo, um programador de computador que descobre que vive em uma realidade simulada pelas máquinas12345. Com a ajuda de Morpheus e Trinity, ele se rebela contra o sistema que usa os humanos como fonte de energia245. O filme foi lançado em 1999 e se tornou um sucesso de crítica e público por sua trama original e seus efeitos especiais25.
+        </resumo>
+        <genero>Ficção</genero>
+        <elenco>
+            <ator>Keanu Reaves</ator>
+            <ator>Laurence John Fishburne</ator>
+        </elenco>
+    </filme>
+    <filme id="3">
+        <titulo>Vingadores</titulo>
+        <resumo>
+        Loki (Tom Hiddleston) retorna à Terra enviado pelos chitauri, uma raça alienígena que pretende dominar os humanos. Com a promessa de que será o soberano do planeta, ele rouba o cubo cósmico dentro de instalações da S.H.I.E.L.D. e, com isso, adquire grandes poderes. Loki os usa para controlar o dr. Erik Selvig (Stellan Skarsgard) e Clint Barton/Gavião Arqueiro (Jeremy Renner), que passam a trabalhar para ele. No intuito de contê-los, Nick Fury (Samuel L. Jackson) convoca um grupo de pessoas com grandes habilidades, mas que jamais haviam trabalhado juntas: Tony Stark/Homem de Ferro (Robert Downey Jr.), Steve Rogers/Capitão América (Chris Evans), Thor (Chris Hemsworth), Bruce Banner/Hulk (Mark Ruffalo) e Natasha Romanoff/Viúva Negra (Scarlett Johansson). Só que, apesar do grande perigo que a Terra corre, não é tão simples assim conter o ego e os interesses de cada um deles para que possam agir em grupo.
+        </resumo>
+        <genero>Ação</genero>
+        <elenco>
+            <ator>Robert Downey Jr.</ator>
+            <ator>Chris Evans</ator>
+            <ator>Scarlett Johansson</ator>
+        </elenco>
+    </filme>
+</filmes>

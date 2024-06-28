@@ -1,0 +1,40 @@
+#box {
+    width: 200px;
+    height: 200px;
+    background: rgb(42, 129, 221);
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    /* animation-name: animation-box;
+    animation-duration: 5s;
+    animation: animation-box 1s 1s 3 alternate; */
+}
+
+/* #box h1 {
+    color: whitesmoke;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+} */
+
+@keyframes animation-box {
+    from {
+        background: cadetblue;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+
+    to {
+        background: orange;
+        border-radius: 100px;
+        top: 100px;
+        left: 100px;
+    }
+}
+
+#box:hover {
+    animation-name: animation-box;
+    animation: animation-box 1s 1s 3 alternate;
+    animation-iteration-count: infinite;
+
+    /*Sobre a minha duvida de antes, do "hover off", é so usar a propriedade "transition:  Xs;" no box usando como X o mesmo valor da transition no #box:hover*/
+}

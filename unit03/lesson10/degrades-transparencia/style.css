@@ -1,0 +1,10 @@
+#box {
+    width: 400px;
+    height: 400px;
+    background: url(/Modulo03/Aula11/img.jpg) no-repeat;
+}
+
+#box h1 {
+    background: linear-gradient(blue, black, white);
+
+}
