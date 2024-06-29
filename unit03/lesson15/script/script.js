@@ -11,9 +11,12 @@ function contato() {
 }
 
 
-function requisitar(url) {
+function requisitar(url, id) {
     document.getElementById('content').innerHTML = ''
-
+    for (let i = 1; i <= 4; i++) {
+        document.getElementById(i).style = "color: #ffff"
+    }
+    document.getElementById(id).style = "color: #BFAE48"
     let ajax = new XMLHttpRequest()
 
     ajax.open('GET', url)
