@@ -1,0 +1,64 @@
+/* Contato */
+
+#contato {
+    background: url(../img/logo-medio.png) no-repeat;
+    margin: 40px;
+    background-position: center;
+    background-size: contain;
+    float: left;
+    height: 310px;
+    width: 250px;
+}
+
+#formulario {
+    float: right;
+    margin: 60px 0px 0px 120px;
+    height: 400px;
+    width: 400px;
+}
+
+#fieldset {
+    padding: 10px 50px 10px 50px;
+    border: none;
+}
+
+label {
+    font-size: 1.4em;
+}
+
+input {
+    height: 30px;
+    width: 400px;
+    background-color: #fff;
+    border: none;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+
+
+input.campo {
+    border: 1px solid #000000;
+}
+
+#mensagem {
+    height: 100px;
+}
+
+input.botao {
+    margin-left: 380px;
+    margin-top: 15px;
+    height: 40px;
+    width: 80px;
+    color: white;
+    background: #000000;
+    font-size: 1.2em;
+}
+
+input#assinar {
+    margin-left: 0;
+}
+
+#h1-contato {
+    margin-top: 50px;
+    text-align: center;
+}

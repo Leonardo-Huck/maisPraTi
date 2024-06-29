@@ -1,0 +1,329 @@
+body {
+    background: #ffffff;
+    font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, Sans-serif;
+}
+
+/* NAV */
+header {
+    background: #f4f2ec url(../img/fundo.jpg) repeat-x;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    height: 100px;
+}
+
+a:link,
+a:active,
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.navegacao {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+.navegacao:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+#logo {
+    float: left;
+    height: 50px;
+    width: auto;
+}
+
+#logo>a:hover {
+    border-bottom: none;
+}
+
+#logo-img {
+    height: 80px;
+    width: auto;
+    margin: 0 auto;
+}
+
+nav {
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 20px;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a:link,
+.navegacao {
+    display: block;
+    margin-right: 25px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
+.destaque {
+    clear: both;
+    position: relative;
+    height: 500px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: right 80% bottom 45%;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.destaque {
+    background-image: url(../img/destaque-home.jpg);
+}
+
+/* Cards
+
+.icone-card {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 60px;
+    padding: 20px;
+}
+
+.cards {
+    width: 100%;
+    float: left;
+    margin: 30px 0 20px 80px;
+}
+
+.card {
+    float: left;
+}
+
+#texto-material-card,
+#texto-parcelamento-card,
+#texto-frete-card {
+    border-left: 2px solid #000;
+    padding-left: 30px;
+    margin-top: 30px;
+} */
+
+/* Container dos produtos */
+#container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+#container-galeria {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+#conteudo {
+    float: left;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font: 10px sans-serif;
+}
+
+.imagem-produto {
+    height: auto;
+    width: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+
+.produto {
+    float: left;
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+    padding: 0 20px 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(55, 55, 55, 0.2), 0 6px 20px 0 rgba(55, 55, 55, 0.19);
+    margin: 20px 0px 20px 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.3em;
+    color: rgb(151, 35, 35);
+}
+
+.produto:hover {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Categorias */
+
+#categorias {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+    margin-left: 80px;
+}
+
+.categoria {
+    float: left;
+    height: 400px;
+    width: 400px;
+    border-radius: 8px;
+    margin: 30px;
+    box-shadow: 0 2px 2px 0 rgba(55, 55, 55, 0.2), 0 6px 20px 0 rgba(55, 55, 55, 0.19);
+    background-position: center;
+    background-size: contain;
+}
+
+.categoria>p {
+    float: right;
+    color: #fff;
+    font-size: 2em;
+    margin-top: 350px;
+    margin-right: 30px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.categoria:hover {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+#categoria-feminina {
+    background-image: url(../img/categorias/Feminino/categoria-acessorios-femininos.jpg);
+}
+
+#categoria-masculina {
+    background-image: url(../img/categorias/Masculino/categoria-acessorios-masculinos.jpg);
+}
+
+#categoria-infantil {
+    background-image: url(../img/categorias/Infantil/categoria-acessorios-infantis.jpg);
+}
+
+#categoria-pets {
+    background-image: url(../img/categorias/Pets/categoria-acessorios-pets.jpg);
+}
+
+/* Newletter */
+
+#news {
+    width: 100%;
+    float: left;
+    margin: 30px 0 30px 0px;
+    padding: 50px 0 50px 0;
+}
+
+form {
+    float: left;
+}
+
+#newsletter {
+    float: left;
+    height: 100px;
+    width: auto;
+    margin: 5px 50px;
+}
+
+#assinar {
+    padding: 10px;
+    color: #fff;
+    background-color: #000;
+}
+
+#label-email-home {
+    font-size: 1.3em;
+}
+
+#email-home {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Galeria */
+.galeria {
+    width: 100%;
+}
+
+.item-galeria {
+    float: left;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    padding: 0 20px 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(55, 55, 55, 0.2), 0 6px 20px 0 rgba(55, 55, 55, 0.19);
+    margin: 20px 0px 20px 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.item-galeria:hover {
+    box-shadow: 0 10px 15px 0 rgba(60, 60, 60, 0.3), 0 6px 20px 0 rgb(60, 60, 60);
+}
+
+#caracol {
+    background-image: url(../img/galeria/Havana-4cm2.jpg);
+}
+
+#bolsa-mel-01 {
+    background-image: url(../img/galeria/bolsa-mel-01.jpeg);
+}
+
+#crazy-horse {
+    background-image: url(../img/galeria/crazy-horse.png);
+}
+
+#papelaria {
+    background-image: url(../img/galeria/papelaria.jpeg);
+}
+
+#cinto-branco-1 {
+    background-image: url(../img/galeria/cinto-branco-1.jpeg);
+}
+
+#cinto-branco-2 {
+    background-image: url(../img/galeria/cinto-branco-2.jpeg);
+}
+
+#lacos-1 {
+    background-image: url(../img/galeria/lacos-1.jpeg);
+}
+
+#lacos-2 {
+    background-image: url(../img/galeria/lacos-2.jpeg);
+}
+
+#carteira-slin {
+    background-image: url(../img/galeria/carteira-slim.jpg);
+}
+
+#cadarco {
+    background-image: url(../img/galeria/cadarco.jpg);
+}
+
+/* Rodape */
+
+footer {
+    clear: both;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #2b2b2b;
+    margin-top: 20px;
+    width: 100%;
+}
+
+footer>p a {
+    padding: 2px 10px;
+}
