@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Site Antigo Spotfy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+    <header>
+        <nav id="header" class="navbar navbar-expand-lg navbar-dark d-flex justify-content-md-around">
+            <div class="d-flex">
+                <a class="navbar-brand" href="#"><img src="./assets/imagens/spotify.svg" alt="" width="130"
+                        height="50"></a>
+            </div>
+            <div class="d-flex align-items-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row mb-6" id="navbarSupportedContent">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item active">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Premium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Ajuda</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Baixar</a>
+                        </li>
+                        <li class="nav-item p-2 flex-grow-1">
+                            <a class="text-white">|</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Inscreva-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide carrossel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carrossel">
+                        <div class="d-flex flex-wrap text-white justify-content-md-center align-content-center h-100">
+                            <h1 class="w-100 p-2 text-center">Música para todos</h1>
+                            <button class="w-20 btn botao" id="roxinho">APROVEITE O SPOTFY FREE</button>
+                            <button class="w-20 btn btn-outline-light botao">OBTER O SPOTFY PREMIUM</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item carrossel">
+                        <div class="d-flex flex-wrap text-white justify-content-md-center align-content-center h-100">
+                            <h1 class="w-100 p-2 text-center">Ouça nossa rádio</h1>
+                            <button class="w-20 btn btn-success botao">RADIO SPOTIFY</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="w-100 bg-light" id="imagens">
+            <div class="w-50 imagens">
+                <div><img src="./assets/imagens/img1.jpg" alt="" class="img"></div>
+                <div><img src="./assets/imagens/img2.jpg" alt="" class="img"></div>
+                <div><img src="./assets/imagens/img3.jpg" alt="" class="img"></div>
+                <div><img src="./assets/imagens/img4.jpg" alt="" class="img"></div>
+            </div>
+            <div class="" id="texto-imagens">
+                <h2 class="texto-img" id="h2-img">O que o Spotify tem?</h2>
+                <h3 class="texto-img">Músicas</h3>
+                <p>O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus
+                    favoritos em um só lugar.</p>
+                <h3 class="texto-img">Playlists</h3>
+                <p>No spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e
+                    especialistas
+                    da música.</p>
+                <h3 class="texto-img">Novos lançamentos</h3>
+                <p>Escute os lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.</p>
+            </div>
+        </section>
+        <section class="w-100 d-flex" id="iphone">
+            <div class="text-white iphone-text">
+                <h2>Fácil</h2>
+                <h3>Buscar</h3>
+                <p>Já sabe o quer escutar? É só procurar e apertar o play.</p>
+                <h3>Navegar</h3>
+                <p>Veja os novos lançamentos, o que está bombando nas paradas e as melhores playlists para o seu
+                    momento.</p>
+                <h3>Descobrir</h3>
+                <p>Curta músicas novas toda segunda-feira com uma playlist personalizada para você. Ou relaxe e curta
+                    uma das radios.</p>
+            </div>
+            <div class="iphone-img">
+                <img class="img-iphone" src="./assets/imagens/iphone1.png" alt="">
+                <img class="img-iphone" src="./assets/imagens/iphone2.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="w-100 footer d-flex align-items-center justify-content-center">
+            <div class="w-25 d-flex justify-content-end" id="logo">
+                <img class="logo-footer" src="./assets/imagens/spotify.svg" alt="">
+            </div>
+            <div class="w-50 d-flex justify-content-center " id="nav-rodape">
+                <div>
+                    <h5>COMPANY</h5>
+                    <ul class="navbar-nav align-items-start">
+                        <li class="nav-item active">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Empregos</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Imprensa</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Novidades</a>
+                        </li>
+                </div>
+                <div>
+                    <h5>COMUNIDADES</h5>
+                    <ul class="navbar-nav align-items-start">
+                        <li class="nav-item active">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Artistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Desenvolvedores</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Marcas</a>
+                        </li>
+                </div>
+                <div>
+                    <h5>LINKS ÚTEIS</h5>
+                    <ul class="navbar-nav align-items-start">
+                        <li class="nav-item active">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Ajuda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Presentes</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link link-light link-opacity-50-hover" href="#">Player da web</a>
+                        </li>
+                </div>
+            </div>
+            <div class="w-25" id="social">
+                <img src="./assets/imagens/instagram.png" alt="">
+                <img src="./assets/imagens/twitter.png" alt="">
+                <img src="./assets/imagens/facebook.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
