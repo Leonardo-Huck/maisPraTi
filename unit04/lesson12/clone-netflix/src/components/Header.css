@@ -1,0 +1,9 @@
+.div-logo {
+    display: flex;
+    margin-left: 10em;
+}
+
+.logo {
+    width: auto;
+    height: 5rem;
+}

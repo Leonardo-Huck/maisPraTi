@@ -1,0 +1,65 @@
+#perfis {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+div>h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+#cards {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.cards {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.cardsImg {
+    box-sizing: border-box;
+    max-width: 200px;
+    max-height: 200px;
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+}
+
+.cardsImg:hover {
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.cards:hover {
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#gerenciarPerfis {
+    margin-top: 3.5rem;
+    width: 15rem;
+    background-color: #141414;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#gerenciarPerfis:hover {
+    color: white;
+    border-color: white;
+}

@@ -1,0 +1,12 @@
+body {
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+        url("./assets/imagem-fundo-netflix.jpg");
+    font-family: Netflix Sans,
+        Helvetica Neue,
+        Segoe UI,
+        Roboto,
+        Ubuntu,
+        sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}

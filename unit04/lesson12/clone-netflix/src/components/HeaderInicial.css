@@ -1,0 +1,73 @@
+.Header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    justify-content: center;
+    padding-top: 0.3rem;
+}
+
+.Header a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.Header a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+#nav {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    justify-content: flex-start;
+    width: 52rem;
+}
+
+#div-busca {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    justify-content: flex-end;
+}
+
+#logo {
+    width: auto;
+    height: 4rem;
+    cursor: pointer;
+}
+
+#Navegacao {
+    display: flex;
+}
+
+#avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.icon-lupa {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.icon-sino {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
