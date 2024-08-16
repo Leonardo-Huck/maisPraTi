@@ -346,5 +346,69 @@ public class Main {
 //
 //        System.out.println("Posição : " + posicao);
 
+        int[][] matrix = {
+                {1, 2, 3},
+                {3, 5, 6},
+                {10, 11, 10}
+        };
+
+        //Exercicio 12 - Somar a diagonal principal e a diagonal secundaria de uma matriz
+
+        int principal = 0;
+        int secundaria = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (i == j) {
+                    principal += matrix[i][j];
+                }
+            }
+        }
+        int index = 0;
+        for (int i = matrix.length; i > 0; i--) {
+            for (int j = matrix[index].length; j > 0; j--) {
+                if (i == j) {
+                    secundaria += matrix[index][j - 1];
+                }
+            }
+            index++;
+        }
+        System.out.println(principal + "");
+        System.out.println(secundaria + "");
+
+        //Exercicio 13 - Rotacionar uma matriz
+
+        int largura = matrix.length;
+        int altura = matrix[0].length;
+        int[][] matrizRotacionada = new int[altura][largura];
+
+        for (int i = 0; i < altura; i++) {
+            for (int j = 0; j < largura; j++) {
+                matrizRotacionada[i][j] = matrix[largura - j - 1][i];
+            }
+        }
+        for (int[] linha : matrizRotacionada) {
+            for (int elemento : linha) {
+                System.out.print(elemento + " ");
+            }
+            System.out.println();
+        }
+
+        //Exercicio 14 - Buscar elementos em uma matriz
+
+        System.out.println("informe um número para busca: ");
+        int busca = sc.nextInt();
+        boolean encontrado = false;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (matrix[i][j] == busca) {
+                    System.out.println("Matrix[" + i + "][" + j + "] = " + busca);
+                    encontrado = true;
+                }
+            }
+        }
+        if (encontrado == false) {
+            System.out.println("Não encontrado!");
+        }
+
     }
 }
