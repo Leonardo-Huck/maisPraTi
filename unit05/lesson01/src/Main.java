@@ -194,23 +194,23 @@ public class Main {
 //        }
 
         // Estruturas de repetição: For
-        for (int i = 0; i < 10; i++) { // Loop de 0 a 9 (10 iterações).
-            System.out.println("Valor de i é: " + i); // Imprime o valor atual de i.
-        }
+//        for (int i = 0; i < 10; i++) { // Loop de 0 a 9 (10 iterações).
+//            System.out.println("Valor de i é: " + i); // Imprime o valor atual de i.
+//        }
 
         // Estruturas de repetição: While
-        int i = 0; // Inicializa a variável i.
-        while (i < 10) { // Loop enquanto i for menor que 10.
-            System.out.println("Valor de i é: " + i); // Imprime o valor atual de i.
-            i++; // Incrementa i.
-        }
+//        int i = 0; // Inicializa a variável i.
+//        while (i < 10) { // Loop enquanto i for menor que 10.
+//            System.out.println("Valor de i é: " + i); // Imprime o valor atual de i.
+//            i++; // Incrementa i.
+//        }
 
         // Estruturas de repetição: Do-While
-        i = 0; // Reinicializa a variável i.
-        do {
-            System.out.println("Valor de i é: " + i); // Imprime o valor atual de i.
-            i++; // Incrementa i.
-        } while (i < 10); // Executa o loop enquanto i for menor que 10.
+//        i = 0; // Reinicializa a variável i.
+//        do {
+//            System.out.println("Valor de i é: " + i); // Imprime o valor atual de i.
+//            i++; // Incrementa i.
+//        } while (i < 10); // Executa o loop enquanto i for menor que 10.
 
         // Manipulação de Strings
 //        String texto = "Java é melhor que aquela linguagem"; // Declara uma String.
@@ -242,8 +242,8 @@ public class Main {
 //        double aleatorio = Math.random(); // Gera um número aleatório entre 0.0 e 1.0.
 //        System.out.println(aleatorio); // Imprime o número aleatório.
 
-        int tamanho = 6;
-        int[] vetor = new int[tamanho];
+
+        int[] vetor = new int[5];
 
         vetor[0] = 10;
         vetor[1] = 20;
@@ -253,23 +253,98 @@ public class Main {
 
         // Exercício 08 - Inversão de um array
 
-        int[] vetorInverso = new int[5];
-        int interador = 0;
-        for (int i = vetor.length - 1; i >= 0; i--) {
-            vetorInverso[interador] = vetor[i];
-            interador++;
-        }
-        for (int i = 0; i < vetor.length; i++) {
-            vetor[i] = vetorInverso[i];
-        }
-        for (int i = 0; i < vetor.length; i++) {
-            System.out.println(vetor[i]);
-        }
+//        int[] vetorInverso = new int[5];
+//        int interador = 0;
+//        for (int i = vetor.length - 1; i >= 0; i--) {
+//            vetorInverso[interador] = vetor[i];
+//            interador++;
+//        }
+//        for (int i = 0; i < vetor.length; i++) {
+//            vetor[i] = vetorInverso[i];
+//        }
+//        for (int i = 0; i < vetor.length; i++) {
+//            System.out.println(vetor[i]);
+//        }
 
         //Exercício 09 - Adicionar elementos ao array
-        vetor[5] = 200;
+//        char resp;
+//        while (true) {
+//            System.out.printf("Gostaria de adicionar algum número ao vetor? s / n ");
+//            resp = sc.next().charAt(0);
+//
+//            if (resp != 'n') {
+//                System.out.println("informe um número para adicionar ao vetor: ");
+//                int adicao = sc.nextInt();
+//
+//                int[] novoVetor = new int[vetor.length];
+//                for (int i = 0; i < vetor.length; i++) {
+//                    novoVetor[i] = vetor[i];
+//                }
+//                vetor = new int[vetor.length + 1];
+//                for (int i = 0; i < novoVetor.length; i++) {
+//                    vetor[i] = novoVetor[i];
+//                }
+//                vetor[vetor.length - 1] = adicao;
+//                for (int i = 0; i < vetor.length; i++) {
+//                    System.out.printf(vetor[i] + "\n");
+//                }
+//            } else {
+//                break;
+//            }
+//        }
 
         //Exercício 10 - Excluir elementos de um array
+//        char resp;
+//        while (true) {
+//            System.out.printf("\nVetor Inicial: ");
+//            for (int i = 0; i < vetor.length; i++) {
+//                System.out.printf(vetor[i] + ", ");
+//            }
+//            System.out.printf("\nGostaria de excluir algum número do vetor? s / n ");
+//            resp = sc.next().charAt(0);
+//
+//            if (resp != 'n') {
+//                System.out.println("informe qual número deseja excluir do vetor: ");
+//                int exclusao = sc.nextInt();
+//
+//                int[] novoVetor = new int[vetor.length];
+//                for (int i = 0; i < vetor.length; i++) {
+//                    novoVetor[i] = vetor[i];
+//                }
+//                vetor = new int[novoVetor.length - 1];
+//                int index = 0;
+//                for (int i = 0; i < novoVetor.length; i++) {
+//                    if (novoVetor[i] != exclusao) {
+//                        vetor[index] = novoVetor[i];
+//                        index++;
+//                    }
+//                }
+//                System.out.printf("Vetor : ");
+//                for (int i = 0; i < vetor.length; i++) {
+//                    System.out.printf(vetor[i] + ", ");
+//                }
+//            } else {
+//                break;
+//            }
+//        }
         //Exercício 11 - Pesquisar elementos em um array
+
+//        System.out.printf("\nVetor Inicial: ");
+//        for (int i = 0; i < vetor.length; i++) {
+//            System.out.printf(vetor[i] + ", ");
+//        }
+//        System.out.printf("\nInforme um número para pesquisar a posição: ");
+//        int resp = sc.nextInt();
+//
+//        int posicao = 0;
+//
+//        for (int i = 0; i < vetor.length; i++) {
+//            if (vetor[i] == resp) {
+//                posicao = i;
+//            }
+//        }
+//
+//        System.out.println("Posição : " + posicao);
+
     }
 }
