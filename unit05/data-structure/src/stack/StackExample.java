@@ -23,8 +23,26 @@ public class StackExample {
         this.top = newNode;
     }
 
-    public void pop() {
-        Node data = this.top.next;
-        this.top = data;
+    public int pop() {
+        if (isEmpty()) {
+            throw new RuntimeException("Stack is empty");
+        }
+        int poppedData = this.top.data;
+
+        this.top = this.top.next;
+
+        return poppedData;
+    }
+
+    public int peek() {
+        if (isEmpty()) {
+            throw new RuntimeException("Stack is empty");
+        }
+
+        return this.top.data;
+    }
+
+    public boolean isEmpty() {
+        return top == null;
     }
 }
