@@ -34,4 +34,26 @@ public class BinaryTree {
         }
         return current;
     }
+
+    public void ordenedPrint(Node current) {
+        if (current != null) {
+            ordenedPrint(current.left);
+            System.out.println(current.value);
+            ordenedPrint(current.right);
+        }
+    }
+
+    public static void main(String[] args) {
+        BinaryTree binaryTree = new BinaryTree();
+
+        binaryTree.add(10);
+        binaryTree.add(11);
+        binaryTree.add(9);
+        binaryTree.add(8);
+        binaryTree.add(20);
+        binaryTree.add(15);
+        binaryTree.add(22);
+
+        binaryTree.ordenedPrint(binaryTree.root);
+    }
 }
