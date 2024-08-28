@@ -35,6 +35,50 @@ public class BinaryTree {
         return current;
     }
 
+    public void remove(int value) {
+        this.root = removeRecursive(this.root, value);
+    }
+
+    private Node removeRecursive(Node current, int value) {
+        if (current == null) { // Se o nó atual for nulo, retorna nulo.
+            return null;
+        }
+
+        if (value < current.value) { // Se o valor for menor que o valor do nó atual, busca na subárvore esquerda.
+            current.left = removeRecursive(current.left, value);
+        } else if (value > current.value) { // Se o valor for maior, busca na subárvore direita.
+            current.right = removeRecursive(current.right, value);
+        } else { // Se o valor for igual ao valor do nó atual, esse é o nó que deve ser removido.
+            if (current.left == null && current.right == null) { // Caso o nó não tenha filhos, basta removê-lo.
+                return null;
+            }
+
+            if (current.left == null) { // Se o nó não tiver filho à esquerda, retorna o filho à direita.
+                return current.right;
+            }
+
+            if (current.right == null) { // Se o nó não tiver filho à direita, retorna o filho à esquerda.
+                return current.left;
+            }
+
+            // Se o nó tiver dois filhos, encontra o menor valor na subárvore direita.
+            int smallestValue = findSmallestValue(current.right);
+
+            current.value = smallestValue; // Substitui o valor do nó atual pelo menor valor.
+
+            // Remove o menor valor da subárvore direita.
+            current.right = removeRecursive(current.right, smallestValue);
+        }
+
+        return current; // Retorna o nó atual após a remoção.
+    }
+
+    // Método para encontrar o menor valor na subárvore, usado na remoção.
+    private int findSmallestValue(Node root) {
+        return root.left == null ? root.value : findSmallestValue(root.left); // Busca o valor mais à esquerda.
+    }
+    
+
     public void ordenedPrint(Node current) {
         if (current != null) {
             ordenedPrint(current.left);
