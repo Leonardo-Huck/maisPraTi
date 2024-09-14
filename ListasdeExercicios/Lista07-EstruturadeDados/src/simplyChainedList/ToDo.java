@@ -1,14 +1,14 @@
 package simplyChainedList;
 
 public class ToDo {
-        private TaskNode head;
+        private Node head;
 
-        private static class TaskNode {
+        private static class Node {
             String task;
             boolean isCompleted;
-            TaskNode next;
+            Node next;
 
-            TaskNode(String task) {
+            Node(String task) {
                 this.task = task;
                 this.isCompleted = false;
                 this.next = null;
@@ -16,11 +16,11 @@ public class ToDo {
         }
 
         public void addTask(String task) {
-            TaskNode newNode = new TaskNode(task);
+            Node newNode = new Node(task);
             if (head == null) {
                 head = newNode;
             } else {
-                TaskNode current = head;
+                Node current = head;
                 while (current.next != null) {
                     current = current.next;
                 }
@@ -36,7 +36,7 @@ public class ToDo {
                 return;
             }
 
-            TaskNode current = head;
+            Node current = head;
             while (current.next != null && !current.next.task.equals(task)) {
                 current = current.next;
             }
@@ -47,7 +47,7 @@ public class ToDo {
         }
 
         public void markTaskAsCompleted(String task) {
-            TaskNode current = head;
+            Node current = head;
             while (current != null) {
                 if (current.task.equals(task)) {
                     current.isCompleted = true;
@@ -58,7 +58,7 @@ public class ToDo {
         }
 
         public void printTasks() {
-            TaskNode current = head;
+            Node current = head;
             while (current != null) {
                 System.out.println(current.task + (current.isCompleted ? " (completed)" : ""));
                 current = current.next;
@@ -67,18 +67,18 @@ public class ToDo {
 
         public static void main(String[] args) {
             ToDo manager = new ToDo();
-            manager.addTask("Estudar Java");
-            manager.addTask("Fazer exercícios");
-            manager.addTask("Ler um livro");
+            manager.addTask("Lavar a louça");
+            manager.addTask("Varrer a varanda");
+            manager.addTask("Estudar para a prova");
 
             System.out.println("Tarefas:");
             manager.printTasks();
 
-            manager.markTaskAsCompleted("Fazer exercícios");
+            manager.markTaskAsCompleted("Varrer a varanda");
             System.out.println("\nTarefas após marcar como concluída:");
             manager.printTasks();
 
-            manager.removeTask("Ler um livro");
+            manager.removeTask("Estudar para a prova");
             System.out.println("\nTarefas após remover:");
             manager.printTasks();
         }
